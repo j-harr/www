@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+    background-color: lightblue;
+    margin: 20px 50px 20px 50px;
+    border: 6px solid black;
+}
+
+hr {
+    border: 1px solid black;
+}
+h1 {
+    border: 2px dashed dodgerblue;
+    font-family: sans-serif;
+    font-size: 4.0rem;
+}
+p {
+    text-align: left;
+    font-size: 2.0rem;
+    border: block;
+    border-color: black;
+    margin: 0 40px 20px 40px;
+    padding: 30px;
+}
+
+important {
+    font-size: 8.0rem;
+    size: 8.0rem;
+}
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: plum;
+    background-color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
