@@ -18,6 +18,13 @@ body {
     margin: 0 10px 0 10px;
 }
 
+@media(max-width: 1000px)
+{
+    .ext_pgs {
+        flex-direction: column;
+    }
+}
+
 
 
 hr {
