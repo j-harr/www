@@ -22,7 +22,11 @@ body {
 {
     .ext_pgs {
         flex-direction: column;
-        justify-content: center;
+    }
+
+    .ext_page {
+        margin-left: auto;
+        margin-right: auto;
     }
 }
 
