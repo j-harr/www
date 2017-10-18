@@ -11,7 +11,7 @@ body {
     flex-direction: row;
 }
 
-.ext_page {
+.ext_pgs ext_page {
     display: flex;
     flex-direction: column;
     width: 300px;
