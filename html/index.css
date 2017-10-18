@@ -12,7 +12,7 @@ body {
 
 .ext_page {
     width: 300px;
-    height: 200px;
+    height: auto;
     border: 1px solid black;
     margin: 0 10px 0 10px;
 }
