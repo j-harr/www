@@ -8,12 +8,9 @@ body {
 .ext_pgs {
     margin: 10px 10px 10px 10px;
     display: flex;
-    flex-direction: row;
 }
 
-.ext_pgs ext_page {
-    display: flex;
-    flex-direction: column;
+.ext_page {
     width: 300px;
     height: 200px;
     border: 1px solid black;
