@@ -44,42 +44,10 @@ h1 {
     font-size: 4.0rem;
 }
 p {
+    font-family: Arial, Helvetica, sans-serif;
     text-align: left;
     border: block;
     border-color: black;
     margin: 0 0px 20px 0px;
     padding: 30px;
-}
-
-important {
-    font-size: 8.0rem;
-    size: 8.0rem;
-}
-
-a:link {
-    color: green;
-    background-color: transparent;
-    text-decoration: none;
-}
-
-a:visited {
-    color: plum;
-    background-color: black;
-    text-decoration: none;
-}
-
-a:hover {
-    color: black;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-a:active {
-    color: yellow;
-    background-color: transparent;
-    text-decoration: underline;
-}
-
-table, th, td {
-    border: 1px solid black;
 }
