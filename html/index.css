@@ -6,29 +6,32 @@ body {
 }
 
 .ext_pgs {
-    margin: 10px 10px 10px 10px;
-    display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
 
 .ext_page {
-    width: 300px;
-    height: auto;
-    border: 1px solid black;
-    margin: 10px 10px 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
 }
 
-@media(max-width: 1000px)
+
+@media(min-width: 750px)
 {
     .ext_pgs {
-        flex-direction: column;
+        margin: 10px 10px 10px 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
     }
 
     .ext_page {
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
+        width: 300px;
+        height: auto;
+        border: 1px solid black;
+        margin: 10px 10px 10px 10px;
     }
+    
 }
 
 
@@ -42,10 +45,9 @@ h1 {
 }
 p {
     text-align: left;
-    font-size: 2.0rem;
     border: block;
     border-color: black;
-    margin: 0 40px 20px 40px;
+    margin: 0 0px 20px 0px;
     padding: 30px;
 }
 
