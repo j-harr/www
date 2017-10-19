@@ -27,7 +27,7 @@
                         </div>
                     </div>
                 </a>
-                <div class="ext_page">
+                <div class="ext_page" style="background-color:lightcoral">
                     <div class="page_title">
                         <h4>About jacobOL</h4>
                     </div>
@@ -38,7 +38,7 @@
                         <h3>Page Link</h3>
                     </div>
                 </div>
-                <div class="ext_page">
+                <div class="ext_page" style="background-color:lightgoldenrodyellow">
                     <div class="page_title">
                         <h4>Mapping Project</h4>
                     </div>
