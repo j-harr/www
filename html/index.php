@@ -14,7 +14,7 @@
         </header>
         <body>
             <div class="ext_pgs">
-                <a href="Library/library.html">
+                <a href="Library/index.html">
                     <div class="ext_page" style="background-color:lightgreen">
                         <div class="page_title">
                             <h4>CS2300 Group 11 Library</h4>
