@@ -33,16 +33,9 @@ body {
     height: auto;
 }
 
-@media(min-width: 750px)
-{
-    .about-content {
-        display: flex;
-        flex-direction: row;
-        align-items: normal;
-    }
-}
 
-@media(min-width: 750px)
+
+@media (min-width: 768px)
 {
     .ext_pgs {
         margin: 10px 10px 10px 10px;
@@ -50,12 +43,16 @@ body {
         flex-direction: row;
         justify-content: space-evenly;
     }
-
     .ext_page {
         width: 300px;
         height: auto;
         border: 1px solid black;
         margin: 10px 10px 10px 10px;
+    }
+    .about-content {
+        display: flex;
+        flex-direction: row;
+        align-items: normal;
     }
     
 }
