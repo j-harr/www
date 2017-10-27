@@ -6,11 +6,13 @@
     </head>
     <body>
         <header>
-            <h1>jacobOL</h1>
+            <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-align: left; padding: 0 20px 20px 20px;">jacobOL</h1>
             <h3>Welcome to my site.</h3></h2>
             <?php
             echo "My first PHP script!";
             ?>
+            <hr>
         </header>
         <body>
             <div class="ext_pgs">
