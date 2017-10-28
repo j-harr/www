@@ -41,6 +41,10 @@ body {
     height: auto;
 }
 
+.about-box p {
+    padding: 0 30px 0 30px;
+}
+
 
 
 @media (min-width: 768px)
