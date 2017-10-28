@@ -18,7 +18,8 @@
         <body>
             <div class="ext_pgs">
                 <a href="Library/library.html">
-                    <div class="ext_page" style="background-color:lightgreen">
+                    <div class="ext_page" style="background-color:lightgreen;
+                    color: black"">
                         <div class="page_title">
                             <h4>CS2300 Group 11 Library</h4>
                         </div>
@@ -29,7 +30,8 @@
                     </div>
                 </a>
                 <a href="About/about.html">
-                    <div class="ext_page" style="background-color:lightcoral">
+                    <div class="ext_page" style="background-color:lightcoral;
+                    color: black"">
                         <div class="page_title">
                             <h4>About jacobOL</h4>
                         </div>
@@ -39,7 +41,8 @@
                         </div>
                     </div>
                 </a>
-                <div class="ext_page" style="background-color:lightgoldenrodyellow">
+                <div class="ext_page" style="background-color:lightgoldenrodyellow;
+                color: black">
                     <div class="page_title">
                         <h4>Mapping Project</h4>
                     </div>
