@@ -13,8 +13,7 @@ body {
 }
 
 .ext_page {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: 10px 30px 10px 30px;
     width: auto;
     border-radius: 30px;
 }
@@ -24,6 +23,13 @@ body {
     align-items: center;
 }
 
+.page-title {
+    padding: 10px 0 0 0;
+}
+
+.page-description {
+    padding: 0 30px 10px 30px;
+}
 
 .about-box {
     display: flex;
@@ -74,5 +80,4 @@ p {
     border: block;
     border-color: black;
     margin: 0 0px 20px 0px;
-    padding: 30px;
 }
