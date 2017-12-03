@@ -1,5 +1,4 @@
-<html>
-<body>
+
 <?php
 
 if(isset($_POST['Submit1'])){
@@ -68,5 +67,3 @@ if (mysqli_query($conn, $sql)) {
 mysqli_close($conn);
 }
 ?>
-</body>
-</html>
