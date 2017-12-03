@@ -34,11 +34,11 @@ echo "CONNECTED";
         <hr>
         <div class="function-select-bar">
             <button class="menuButton" id="function1">Add Guest</button>
-            <button class="menuButton" id="function2">Remove Guest</button>
-            <button class="menuButton" id="function3">Search Guest</button>
-            <button class="menuButton" id="function4">Search Room</button>
-            <button class="menuButton" id="function5">Available Rooms</button>
-            <button class="menuButton" id="function6">Tender Payment</button>
+            <button class="menuButton f2btn">Remove Guest</button>
+            <button class="menuButton f3btn" id="function3">Search Guest</button>
+            <button class="menuButton f4btn" id="function4">Search Room</button>
+            <button class="menuButton f5btn" id="function5">Available Rooms</button>
+            <button class="menuButton f6btn" id="function6">Tender Payment</button>
         </div>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
         Search: <input type="text" name="fName">
