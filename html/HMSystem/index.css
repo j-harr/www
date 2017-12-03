@@ -73,6 +73,7 @@ label {
 .f6btn {background-color: lavender;}
 
 .submit {
+    padding: 0 0 0 200px;
     text-align: center;
     width: 80px;
 }
