@@ -40,6 +40,7 @@ echo "CONNECTED";
             <button class="menuButton f5btn" id="function5">Available Rooms</button>
             <button class="menuButton f6btn" id="function6">Tender Payment</button>
         </div>
+        <hr>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
         Search: <input type="text" name="fName">
         <input type="submit" value="Submit">
