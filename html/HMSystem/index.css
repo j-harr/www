@@ -44,7 +44,7 @@ input {
     width: 100%;
 }
 
-input submit {
+input .submit {
     text-align: center;
     width: 80px;
 }
