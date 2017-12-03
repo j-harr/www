@@ -238,7 +238,8 @@ echo "CONNECTED";
             }
 
             function validfrmf1() {
-                var gID = document.forms["frmf1"]["f1guestID"].value;
+                var frm = document.forms["frmf1"];
+                var gID = frm["f1guestID"].value;
                 if(gID == "") {
                     alert("Guest ID is a required field.");
                     return false;
