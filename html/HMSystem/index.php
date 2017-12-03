@@ -122,7 +122,7 @@ echo "CONNECTED";
             var frmf1 = document.getElementById('frmf1');
 
             btnf1.onlick = function() {
-                frmf1.style.display = "flex";
+                frmf1.style.display = "block";
             }
 
     </body>
