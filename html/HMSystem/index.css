@@ -1,5 +1,11 @@
+.function-select-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 .menuButton{
-    width: 300px;
+    width: 10%;
+    height: 40px;
     border-radius: 20%;
     background-color: lightgreen;
     border: 1px solid black;
