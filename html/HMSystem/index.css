@@ -17,6 +17,11 @@ form {
     width: auto;
 }
 
+.form-row{
+    display: flex;
+    flex-direction: row;
+}
+
 .function-select-bar {
     display: flex;
     flex-direction: row;
