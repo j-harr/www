@@ -48,7 +48,8 @@ function clean($data){
     return $data;
 }
 
-$sql = "INSERT INTO Guest1 VALUES('" . $f1guestID . "', '" . $f1guestFN .
+$sql = "INSERT INTO Guest1 (GuestID,F_Name,M_Name,L_Name,Street,
+City,State,Country,ZIP,Age,NumInParty) VALUES('" . $f1guestID . "', '" . $f1guestFN .
 "', '" . $f1guestMN . "', '" . $f1guestLN "', '" . $f1guestSTR . "', '" .
 $f1guestCTY . "', '" . $f1guestSTE . "', '" . $f1guestCTRY . "', '" . 
 $f1guestZIP . "', '" . $f1guestAGE . "', '" . $f1guestNIP . "')";
