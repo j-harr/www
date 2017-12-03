@@ -113,13 +113,13 @@ echo "CONNECTED";
         </form>
 
         <script>
-            var btnf1 = document.getElementById('btnf1');
+            var btnf1 = document.getElementById("btnf1");
             var btnf2 = document.getElementById("btnf2");
             var btnf3 = document.getElementById("btnf3");
             var btnf4 = document.getElementById("btnf4");
             var btnf5 = document.getElementById("btnf5");
             var btnf6 = document.getElementById("btnf6");
-            var frmf1 = document.getElementById('frmf1');
+            var frmf1 = document.getElementById("frmf1");
 
             btnf1.onlick = function() {
                 frmf1.style.display = "block";
