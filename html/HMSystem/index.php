@@ -43,7 +43,9 @@ echo "CONNECTED";
         </div>
         <hr>
         <form name="function1Form" onsubmit="return validateForm()" method="post">
-            <h3>Add Guest</h3>
+            <div class="form-row">
+                <h3>Add Guest</h3>
+            </div>
             <div class="form-row">
                 <label>Guest ID</label><input type="text" name="f1guestID">
             </div>
