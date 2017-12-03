@@ -10,11 +10,15 @@ body {
 
 form {
     align-content: center;
-    display: none;
+    display: flex;
     flex-direction: column;
     margin: auto;
     max-width: 350px;
     width: auto;
+}
+
+form frmf1 {
+    display: none;
 }
 
 .form-row{
