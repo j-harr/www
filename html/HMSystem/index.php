@@ -42,7 +42,7 @@ echo "CONNECTED";
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <form id="frmf1" name="frmf1" onsubmit="return validfrmf1()" action="/frmf1.php" method="post">
+        <form id="frmf1" name="frmf1" action="/frmf1.php" onsubmit="return validfrmf1()" method="post">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>
@@ -238,8 +238,7 @@ echo "CONNECTED";
             }
 
             function validfrmf1() {
-                var frm = document.forms["frmf1"];
-                var gID = frm["f1guestID"].value'
+                var gID = document.forms["frmf1"]["f1guestID"].value;
                 if(gID == "") {
                     alert("Guest ID is a required field.");
                     return false;
