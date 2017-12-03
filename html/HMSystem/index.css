@@ -12,6 +12,8 @@ form {
     align-content: center;
     display: flex;
     flex-direction: column;
+    max-width: 200px;
+    width: auto;
 }
 
 .function-select-bar {
