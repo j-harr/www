@@ -30,7 +30,8 @@ if($conn->connect_error){
 }
 
 echo "CONNECTED";
-?> to the database.</h6>
+?>
+ to the database.</h6>
         <hr>
         <div class="function-select-bar">
             <button class="menuButton" id="function1">Add Guest</button>
@@ -43,6 +44,7 @@ echo "CONNECTED";
         <hr>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
         Search: <input type="text" name="fName">
+        GuestID: <input type="text" name="GID">
         <input type="submit" value="Submit">
         </form>
 
