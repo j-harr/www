@@ -34,7 +34,7 @@ echo "CONNECTED";
  to the database.</h6>
         <hr>
         <div class="function-select-bar">
-            <button id="btnf1" class="menuButton" onclick="btnf1Click();">Add Guest</button>
+            <button class="menuButton" id="btnf1">Add Guest</button>
             <button class="menuButton f2btn" id="btnf2">Remove Guest</button>
             <button class="menuButton f3btn" id="btnf3">Search Guest</button>
             <button class="menuButton f4btn" id="btnf4">Search Room</button>
@@ -121,7 +121,7 @@ echo "CONNECTED";
             var btnf6 = document.getElementById("btnf6");
             var frmf1 = document.getElementById("frmf1");
 
-            function btnf1Click() {
+            btnf1.onclick = function btnf1Click() {
                 frmf1.style.display = "block";
             }
 
