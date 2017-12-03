@@ -2,6 +2,7 @@
 <html>
     <head>
         <title>Hotel Management System</title>
+        <link rel = "stylesheet" type = "text/css" href = "index.css"/>
         <script>
         function validateForm() {
             var x = document.forms["searchBox"]["fName"].value;
