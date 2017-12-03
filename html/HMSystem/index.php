@@ -121,7 +121,7 @@ echo "CONNECTED";
             var btnf6 = document.getElementById("btnf6");
             frmf1 = document.getElementById('frmf1');
 
-            btnf1.onlick = function {
+            btnf1.onlick = function() {
                 frmf1.style.display = "flex";
             }
 
