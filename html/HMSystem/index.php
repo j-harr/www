@@ -251,42 +251,37 @@ echo "CONNECTED";
                 var gRATE = frm["f1guestRATE"].value;
                 if(gID == "") {
                     alert("Guest ID is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gFN == "") {
                     alert("First Name is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gLN == "") {
                     alert("Last Name is a required field.");
-                    return false;
+                   // return false;
                 }
                 if(gPH == "") {
                     alert("Phone Number is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gZIP == "") {
                     alert("ZIP Code is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gNIP == "") {
-                    alert("# in Party is a required field.");
-                    return false;
+                    gNIP = 1;
                 }
                 if(gRN == "") {
                     alert("Room Number is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gCHI == "") {
                     alert("Check In Date is a required field.");
-                    return false;
+                    //return false;
                 }
                 if(gRATE == "") {
                     alert("Rate per Night is a required field.");
-                    return false;
-                }
-                if(gCHO - gCHI >= 0){
-                    alert("Check-out date cannot be before Check-in.");
                     return false;
                 }
             }
