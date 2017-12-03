@@ -42,7 +42,7 @@ echo "CONNECTED";
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <form name="frmf1" onsubmit="return validateForm()" method="post">
+        <form id="frmf1" name="frmf1" onsubmit="return validateForm()" method="post">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>
@@ -120,6 +120,7 @@ echo "CONNECTED";
             var btnf5 = document.getElementById("btnf5");
             var btnf6 = document.getElementById("btnf6");
             var frmf1 = document.getElementById("frmf1");
+
             btnf1.onlick = function {
                 frmf1.style.display = "block";
             }
