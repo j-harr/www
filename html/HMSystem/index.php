@@ -44,12 +44,12 @@ echo "CONNECTED";
         <hr>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
             <div class="form-row">
-                Search: <input type="text" name="fName">
+                <label>Search:</label><input type="text" name="fName">
             </div>
             <div class="form-row">
-                GuestID: <input type="text" name="GID">
+                <label>GuestID:</label><input type="text" name="GID">
             </div>
-        <input type="submit" value="Submit">
+        <input class="submit" type="submit" value="Submit">
         </form>
 
     </body>

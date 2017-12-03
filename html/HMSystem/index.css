@@ -22,6 +22,10 @@ form {
     flex-direction: row;
 }
 
+.form-row.label {
+    width: 80px;
+}
+
 .function-select-bar {
     display: flex;
     flex-direction: row;
@@ -36,6 +40,10 @@ h1,h6 {
 input {
     display: flex;
     flex-direction: row;
+}
+
+.input.submit {
+    width: 80px;
 }
 
 .menuButton {
