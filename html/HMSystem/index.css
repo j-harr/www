@@ -1,3 +1,7 @@
+h1 {
+    text-align: center;
+}
+
 .function-select-bar {
     display: flex;
     flex-direction: row;
@@ -7,7 +11,7 @@
     width: 200px;
     min-height: 60px;
     height: auto;
-    border-radius: 20%;
+    border-radius: 10%;
     background-color: lightgreen;
     border: 1px solid black;
     color: black;
