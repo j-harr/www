@@ -20,6 +20,7 @@ form {
 .form-row{
     display: flex;
     flex-direction: row;
+    padding: 5px;
 }
 
 .form-row label {
@@ -43,7 +44,8 @@ input {
     width: auto;
 }
 
-.input .submit {
+.input submit {
+    text-align: center;
     width: 80px;
 }
 
