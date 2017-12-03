@@ -31,6 +31,14 @@ if($conn->connect_error){
 echo "CONNECTED";
 ?> to the database.</h6>
         <hr>
+        <div class="function-select-bar">
+            <button id="function1">Add Guest</button>
+            <button id="function2">Remove Guest</button>
+            <button id="function3">Search Guest</button>
+            <button id="function4">Search Room</button>
+            <button id="function5">Available Rooms</button>
+            <button id="function6">Tender Payment</button>
+        </div>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
         Search: <input type="text" name="fName">
         <input type="submit" value="Submit">
