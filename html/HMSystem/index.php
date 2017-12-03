@@ -42,7 +42,7 @@ echo "CONNECTED";
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <form id="frmf1" name="frmf1" onsubmit="return validateForm()" method="post">
+        <form id="frmf1" name="frmf1" onsubmit="return validfrmf1()" action="/frmf1.php" method="post">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>
@@ -156,7 +156,7 @@ echo "CONNECTED";
             </div>
         </form>
 
-        <form id="frmf6" name="frmf6" onsubmit="return validateForm()" method="post">
+        <form id="frmf6" name="frmf6"  method="post">
             <div class="form-row">
                 <h3>Tender Payment</h3>
             </div>
@@ -237,6 +237,14 @@ echo "CONNECTED";
                 frmf6.style.display = "flex";
             }
 
+            function validfrmf1() {
+                var frm = document.forms["frmf1"];
+                var gID = frm["f1guestID"].value'
+                if(gID == "") {
+                    alert("Guest ID is a required field.");
+                    return false;
+                }
+            }
         </script>
     </body>
 </html>
