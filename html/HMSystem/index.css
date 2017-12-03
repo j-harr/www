@@ -22,7 +22,7 @@ form {
     flex-direction: row;
 }
 
-.form-row.label {
+.form-row label {
     width: 80px;
 }
 
@@ -42,7 +42,7 @@ input {
     flex-direction: row;
 }
 
-.input.submit {
+.input submit {
     width: 80px;
 }
 
