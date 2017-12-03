@@ -44,11 +44,6 @@ input {
     width: auto;
 }
 
-.input submit {
-    text-align: center;
-    width: 80px;
-}
-
 label {
     width: 80px;
 }
@@ -74,3 +69,8 @@ label {
 .f4btn {background-color: lightgreen;}
 .f5btn {background-color: lightblue;}
 .f6btn {background-color: lavender;}
+
+.submit {
+    text-align: center;
+    width: 100px;
+}
