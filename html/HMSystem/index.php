@@ -125,5 +125,6 @@ echo "CONNECTED";
                 frmf1.style.display = "block";
             }
 
+        </script>
     </body>
 </html>
