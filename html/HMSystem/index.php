@@ -25,7 +25,7 @@
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <form id="frmf1" name="frmf1" action="" onsubmit="return validfrmf1()" method="post">
+        <form id="frmf1" name="frmf1" action="frmf1.php" onsubmit="return validfrmf1()" method="post">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>

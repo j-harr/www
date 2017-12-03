@@ -1,7 +1,5 @@
 
 <?php
-
-if(isset($_POST['Submit1'])){
 //Declaration of variables
 $f1guestID = $f1guestFN = $f1guestMN = $f1guestLN = $f1guestPN = "";
 $f1guestSTR = $f1guestCTY = $f1guestSTE = $f1guestCTRY = $f1guestZIP = "";
@@ -22,7 +20,7 @@ if($conn->connect_error){
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $f1guestID = clean($_POST["f1guestID"]);
+    $f1guestID = clean($_POST['f1guestID']);
     $f1guestFN = clean($_POST["f1guestFN"]);
     $f1guestMN = clean($_POST["f1guestMN"]);
     $f1guestLN = clean($_POST["f1guestLN"]);
@@ -65,5 +63,4 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
-}
 ?>
