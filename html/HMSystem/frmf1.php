@@ -46,4 +46,17 @@ function clean($data){
     $data = htmlspecialchars($data);
     return $data;
 }
+
+$sql = "INSERT INTO Guest1 VALUES('" . $f1guestID . "', '" . $f1guestFN .
+"', '" . $f1guestMN . "', '" . $f1guestLN "', '" . $f1guestSTR . "', '" .
+$f1guestCTY . "', '" . $f1guestSTE . "', '" . $f1guestCTRY . "', '" . 
+$f1guestZIP . "', '" . $f1guestAGE . "', '" . $f1guestNIP . "')";
+
+if (mysqli_query($conn, $sql)) {
+    echo "New record created successfully";
+} else {
+    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+}
+
+mysqli_close($conn);
 ?>
