@@ -47,7 +47,7 @@ echo "CONNECTED";
                 <h3>Add Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="text" name="f1guestID">
+                <label>Guest ID</label><input type="number" name="f1guestID">
             </div>
             <div class="form-row">
                 <label>First Name</label><input type="text" name="f1guestFN">
@@ -109,7 +109,63 @@ echo "CONNECTED";
             <div class="form-row">
                 <input class="submit" type="submit" value="Submit">
             </div>
-            
+        </form>
+
+        <form id="frmf2" name="frmf2" onsubmit="return validateForm()" method="post">
+            <div class="form-row">
+                <h3>Remove Guest</h3>
+            </div>
+            <div class="form-row">
+                <label>Guest ID</label><input type="number" name="f2guestID">
+            </div>
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <form id="frmf3" name="frmf3" onsubmit="return validateForm()" method="post">
+            <div class="form-row">
+                <h3>Search Guest</h3>
+            </div>
+            <div class="form-row">
+                <label>Guest ID</label><input type="number" name="f3guestID">
+            </div>
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <form id="frmf4" name="frmf4" onsubmit="return validateForm()" method="post">
+            <div class="form-row">
+                <h3>Search Room</h3>
+            </div>
+            <div class="form-row">
+                <label>Room Number</label><input type="number" name="f4roomNum">
+            </div>
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <form id="frmf5" name="frmf5" onsubmit="return validateForm()" method="post">
+            <div class="form-row">
+                <h3>Available Rooms</h3>
+            </div>
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
+        </form>
+
+        <form id="frmf6" name="frmf6" onsubmit="return validateForm()" method="post">
+            <div class="form-row">
+                <h3>Tender Payment</h3>
+            </div>
+            <div class="form-row">
+                <label>Guest ID</label><input type="text" name="f6guestID">
+            </div>
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
         </form>
 
         <script>
@@ -119,6 +175,7 @@ echo "CONNECTED";
             var btnf4 = document.getElementById("btnf4");
             var btnf5 = document.getElementById("btnf5");
             var btnf6 = document.getElementById("btnf6");
+
             var frmf1 = document.getElementById("frmf1");
             var frmf2 = document.getElementById("frmf2");
             var frmf3 = document.getElementById("frmf3");
@@ -134,6 +191,7 @@ echo "CONNECTED";
                 frmf6.style.display = "none";                
                 frmf1.style.display = "flex";
             }
+
             btnf2.onclick = function btnf2Click() {
                 frmf3.style.display = "none";
                 frmf4.style.display = "none";
@@ -142,6 +200,7 @@ echo "CONNECTED";
                 frmf1.style.display = "none";
                 frmf2.style.display = "flex";
             }
+
             btnf3.onclick = function btnf3Click() {
                 frmf2.style.display = "none";
                 frmf4.style.display = "none";
@@ -150,6 +209,7 @@ echo "CONNECTED";
                 frmf1.style.display = "none";
                 frmf3.style.display = "flex";
             }
+
             btnf4.onclick = function btnf4Click() {
                 frmf2.style.display = "none";
                 frmf3.style.display = "none";
@@ -158,6 +218,7 @@ echo "CONNECTED";
                 frmf1.style.display = "none";
                 frmf4.style.display = "flex";
             }
+
             btnf5.onclick = function btnf5Click() {
                 frmf2.style.display = "none";
                 frmf3.style.display = "none";
@@ -166,6 +227,7 @@ echo "CONNECTED";
                 frmf1.style.display = "none";
                 frmf5.style.display = "flex";
             }
+
             btnf6.onclick = function btnf6Click() {
                 frmf2.style.display = "none";
                 frmf3.style.display = "none";

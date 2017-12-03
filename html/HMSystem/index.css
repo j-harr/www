@@ -17,7 +17,12 @@ form {
     width: auto;
 }
 
-#frmf1 {
+#frmf1,
+#frmf2,
+#frmf3,
+#frmf4,
+#frmf5,
+#frmf6 {
     display: none;
 }
 
