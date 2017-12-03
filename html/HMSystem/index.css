@@ -10,7 +10,7 @@ body {
 
 form {
     align-content: center;
-    display: flex;
+    display: none;
     flex-direction: column;
     margin: auto;
     max-width: 350px;

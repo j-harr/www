@@ -34,15 +34,15 @@ echo "CONNECTED";
  to the database.</h6>
         <hr>
         <div class="function-select-bar">
-            <button class="menuButton" id="function1">Add Guest</button>
-            <button class="menuButton f2btn" id="function2">Remove Guest</button>
-            <button class="menuButton f3btn" id="function3">Search Guest</button>
-            <button class="menuButton f4btn" id="function4">Search Room</button>
-            <button class="menuButton f5btn" id="function5">Available Rooms</button>
-            <button class="menuButton f6btn" id="function6">Tender Payment</button>
+            <button class="menuButton" id="btnf1">Add Guest</button>
+            <button class="menuButton f2btn" id="btnf2">Remove Guest</button>
+            <button class="menuButton f3btn" id="btnf3">Search Guest</button>
+            <button class="menuButton f4btn" id="btnf4">Search Room</button>
+            <button class="menuButton f5btn" id="btnf5">Available Rooms</button>
+            <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <form name="function1Form" onsubmit="return validateForm()" method="post">
+        <form name="frmf1" onsubmit="return validateForm()" method="post">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>
@@ -111,6 +111,18 @@ echo "CONNECTED";
             </div>
             
         </form>
+
+        <script>
+            var btnf1 = document.getElementById("btnf1");
+            var btnf2 = document.getElementById("btnf2");
+            var btnf3 = document.getElementById("btnf3");
+            var btnf4 = document.getElementById("btnf4");
+            var btnf5 = document.getElementById("btnf5");
+            var btnf6 = document.getElementById("btnf6");
+            var frmf1 = document.getElementById("frmf1");
+            btnf1.onlick = function {
+                frmf1.style.display = "block";
+            }
 
     </body>
 </html>
