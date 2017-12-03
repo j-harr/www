@@ -20,6 +20,7 @@ form {
 .form-row{
     display: flex;
     flex-direction: row;
+    margin-left: auto;
     padding: 5px;
 }
 
