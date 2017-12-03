@@ -27,6 +27,11 @@ form {
     width: 80px;
 }
 
+.form-row submit {
+    text-align: center;
+    width: 80px;
+}
+
 .function-select-bar {
     display: flex;
     flex-direction: row;
@@ -42,11 +47,6 @@ input {
     display: flex;
     flex-direction: row;
     width: 100%;
-}
-
-input .submit {
-    text-align: center;
-    width: 80px;
 }
 
 label {
