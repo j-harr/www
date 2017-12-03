@@ -90,7 +90,7 @@
                 <label>Address</label><input type="text" name="f1guestEC-ADR">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="submit" type="submit" value="Submit" name="Submit1"/>
             </div>
         </form>
 

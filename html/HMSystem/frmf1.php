@@ -1,6 +1,8 @@
 <html>
 <body>
 <?php
+
+if(isset($_POST['Submit1'])){
 //Declaration of variables
 $f1guestID = $f1guestFN = $f1guestMN = $f1guestLN = $f1guestPN = "";
 $f1guestSTR = $f1guestCTY = $f1guestSTE = $f1guestCTRY = $f1guestZIP = "";
@@ -64,6 +66,7 @@ if (mysqli_query($conn, $sql)) {
 }
 
 mysqli_close($conn);
+}
 ?>
 </body>
 </html>
