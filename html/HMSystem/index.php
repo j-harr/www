@@ -120,9 +120,59 @@ echo "CONNECTED";
             var btnf5 = document.getElementById("btnf5");
             var btnf6 = document.getElementById("btnf6");
             var frmf1 = document.getElementById("frmf1");
+            var frmf2 = document.getElementById("frmf2");
+            var frmf3 = document.getElementById("frmf3");
+            var frmf4 = document.getElementById("frmf4");
+            var frmf5 = document.getElementById("frmf5");
+            var frmf6 = document.getElementById("frmf6");
 
             btnf1.onclick = function btnf1Click() {
-                frmf1.style.display = "block";
+                frmf2.style.display = "none";
+                frmf3.style.display = "none";
+                frmf4.style.display = "none";
+                frmf5.style.display = "none";
+                frmf6.style.display = "none";                
+                frmf1.style.display = "flex";
+            }
+            btnf2.onclick = function btnf2Click() {
+                frmf3.style.display = "none";
+                frmf4.style.display = "none";
+                frmf5.style.display = "none";
+                frmf6.style.display = "none";                
+                frmf1.style.display = "none";
+                frmf2.style.display = "flex";
+            }
+            btnf3.onclick = function btnf3Click() {
+                frmf2.style.display = "none";
+                frmf4.style.display = "none";
+                frmf5.style.display = "none";
+                frmf6.style.display = "none";                
+                frmf1.style.display = "none";
+                frmf3.style.display = "flex";
+            }
+            btnf4.onclick = function btnf4Click() {
+                frmf2.style.display = "none";
+                frmf3.style.display = "none";
+                frmf5.style.display = "none";
+                frmf6.style.display = "none";                
+                frmf1.style.display = "none";
+                frmf4.style.display = "flex";
+            }
+            btnf5.onclick = function btnf5Click() {
+                frmf2.style.display = "none";
+                frmf3.style.display = "none";
+                frmf4.style.display = "none";
+                frmf6.style.display = "none";                
+                frmf1.style.display = "none";
+                frmf5.style.display = "flex";
+            }
+            btnf6.onclick = function btnf6Click() {
+                frmf2.style.display = "none";
+                frmf3.style.display = "none";
+                frmf4.style.display = "none";
+                frmf5.style.display = "none";               
+                frmf1.style.display = "none";
+                frmf6.style.display = "flex";
             }
 
         </script>
