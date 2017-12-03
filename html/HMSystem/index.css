@@ -4,8 +4,9 @@
     justify-content: space-evenly;
 }
 .menuButton{
-    width: 10%;
-    height: 40px;
+    width: 200px;
+    min-height: 60px;
+    height: auto;
     border-radius: 20%;
     background-color: lightgreen;
     border: 1px solid black;
