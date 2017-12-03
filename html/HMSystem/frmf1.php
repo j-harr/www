@@ -1,3 +1,5 @@
+<html>
+<body>
 <?php
 //Declaration of variables
 $f1guestID = $f1guestFN = $f1guestMN = $f1guestLN = $f1guestPN = "";
@@ -60,3 +62,5 @@ if (mysqli_query($conn, $sql)) {
 
 mysqli_close($conn);
 ?>
+</body>
+</html>
