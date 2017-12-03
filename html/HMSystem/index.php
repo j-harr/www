@@ -34,7 +34,7 @@ echo "CONNECTED";
         <hr>
         <div class="function-select-bar">
             <button class="menuButton" id="function1">Add Guest</button>
-            <button class="menuButton f2btn">Remove Guest</button>
+            <button class="menuButton f2btn" id="function2">Remove Guest</button>
             <button class="menuButton f3btn" id="function3">Search Guest</button>
             <button class="menuButton f4btn" id="function4">Search Room</button>
             <button class="menuButton f5btn" id="function5">Available Rooms</button>
