@@ -79,7 +79,9 @@ echo "CONNECTED";
             <div class="form-row">
                 <label># in Party</label><input type="text" name="f1guestNIP">
             </div>
-        <input class="submit" type="submit" value="Submit">
+            <div class="form-row">
+                <input class="submit" type="submit" value="Submit">
+            </div>
         </form>
 
     </body>
