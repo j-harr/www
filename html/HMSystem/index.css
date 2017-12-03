@@ -8,15 +8,21 @@ body {
     width: 90%;
 }
 
-h1,h6 {
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
+form {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .function-select-bar {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+}
+
+h1,h6 {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
 .menuButton {
