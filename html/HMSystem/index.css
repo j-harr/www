@@ -20,7 +20,7 @@ h1,h6 {
     font-size: 20px;
 }
 
-.f1btn {background-color: lightpink;}
+.menuButton f1btn {background-color: lightpink;}
 .f2btn {background-color: lightcoral;}
 .f3btn {background-color: lightgoldenrodyellow;}
 .f4btn {background-color: lightgreen;}
