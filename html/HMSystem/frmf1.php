@@ -54,6 +54,9 @@ $sql = "INSERT INTO Guest1 VALUES('" . $f1guestID . "', '" . $f1guestFN .
 $f1guestCTY . "', '" . $f1guestSTE . "', '" . $f1guestCTRY . "', '" . 
 $f1guestZIP . "', '" . $f1guestAGE . "', '" . $f1guestNIP . "')";
 
+$stmt = mysqli_prepare($sql);
+$stmt->execute();
+
 if (mysqli_query($conn, $sql)) {
     echo "New record created successfully";
 } else {
