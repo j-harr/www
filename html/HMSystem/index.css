@@ -46,6 +46,10 @@ input {
     width: 80px;
 }
 
+label {
+    width: 80px;
+}
+
 .menuButton {
     background-color: lightcoral;
     border: 3px solid black;
