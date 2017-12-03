@@ -32,12 +32,12 @@ echo "CONNECTED";
 ?> to the database.</h6>
         <hr>
         <div class="function-select-bar">
-            <button id="function1">Add Guest</button>
-            <button id="function2">Remove Guest</button>
-            <button id="function3">Search Guest</button>
-            <button id="function4">Search Room</button>
-            <button id="function5">Available Rooms</button>
-            <button id="function6">Tender Payment</button>
+            <button class="menuButton" id="function1">Add Guest</button>
+            <button class="menuButton" id="function2">Remove Guest</button>
+            <button class="menuButton" id="function3">Search Guest</button>
+            <button class="menuButton" id="function4">Search Room</button>
+            <button class="menuButton" id="function5">Available Rooms</button>
+            <button class="menuButton" id="function6">Tender Payment</button>
         </div>
         <form name="searchBox" onsubmit="return validateForm()" method="post">
         Search: <input type="text" name="fName">
