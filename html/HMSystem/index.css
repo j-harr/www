@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(to bottom right,darkblue,darkslateblue);
+    background-color: navy;
+    color: white;
     display: block;
     height: 100%;
     justify-content: center;
