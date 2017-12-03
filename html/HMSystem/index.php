@@ -249,41 +249,43 @@ echo "CONNECTED";
                 var gCHI = frm["f1guestCHIN"].value;
                 var gCHO = frm["f1guestCHOT"].value;
                 var gRATE = frm["f1guestRATE"].value;
+                var allgood = true;
                 if(gID == "") {
                     alert("Guest ID is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gFN == "") {
                     alert("First Name is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gLN == "") {
                     alert("Last Name is a required field.");
-                   // return false;
+                   allgood = false;
                 }
                 if(gPH == "") {
                     alert("Phone Number is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gZIP == "") {
                     alert("ZIP Code is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gNIP == "") {
                     gNIP = 1;
                 }
                 if(gRN == "") {
                     alert("Room Number is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gCHI == "") {
                     alert("Check In Date is a required field.");
-                    //return false;
+                    allgood = false;
                 }
                 if(gRATE == "") {
                     alert("Rate per Night is a required field.");
-                    return false;
+                    allgood = false;
                 }
+                return allgood;
             }
         </script>
     </body>
