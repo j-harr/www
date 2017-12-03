@@ -8,11 +8,12 @@ h1,h6 {
     flex-direction: row;
     justify-content: space-evenly;
 }
-.menuButton{
+.menuButton {
     width: 200px;
     min-height: 60px;
     height: auto;
     border-radius: 10%;
+    background-color: lightpink;
     border: 1px solid black;
     color: black;
     padding: 15px 32px;
@@ -20,9 +21,8 @@ h1,h6 {
     font-size: 20px;
 }
 
-.menuButton.f1btn {background-color: lightpink;}
-.f2btn {background-color: lightcoral;}
-.f3btn {background-color: lightgoldenrodyellow;}
+.menuButton.f2btn {background-color: lightcoral;}
+.menuButton.f3btn {background-color: lightgoldenrodyellow;}
 .f4btn {background-color: lightgreen;}
 .f5btn {background-color: lightblue;}
 .f6btn {background-color: lavender;}
