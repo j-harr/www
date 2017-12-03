@@ -42,12 +42,42 @@ echo "CONNECTED";
             <button class="menuButton f6btn" id="function6">Tender Payment</button>
         </div>
         <hr>
-        <form name="searchBox" onsubmit="return validateForm()" method="post">
+        <form name="functionForm1" onsubmit="return validateForm()" method="post">
             <div class="form-row">
-                <label>Search:</label><input type="text" name="fName">
+                <label>Guest ID</label><input type="text" name="f1guestID">
             </div>
             <div class="form-row">
-                <label>GuestID:</label><input type="text" name="GID">
+                <label>First Name</label><input type="text" name="f1guestFN">
+            </div>
+            <div class="form-row">
+                <label>Middle Name</label><input type="text" name="f1guestMN">
+            </div>
+            <div class="form-row">
+                <label>Last Name</label><input type="text" name="f1guestLN">
+            </div>
+            <div class="form-row">
+                <label>Phone Number</label><input type="text" name="f1guestPN">
+            </div>
+            <div class="form-row">
+                <label>Street</label><input type="text" name="f1guestSTR">
+            </div>
+            <div class="form-row">
+                <label>City</label><input type="text" name="f1guestCTY">
+            </div>
+            <div class="form-row">
+                <label>State</label><input type="text" name="f1guestSTE">
+            </div>
+            <div class="form-row">
+                <label>Country</label><input type="text" name="f1guestCTRY">
+            </div>
+            <div class="form-row">
+                <label>ZIP Code</label><input type="text" name="f1guestZIP">
+            </div>
+            <div class="form-row">
+                <label>Age</label><input type="text" name="f1guestAGE">
+            </div>
+            <div class="form-row">
+                <label># in Party</label><input type="text" name="f1guestNIP">
             </div>
         <input class="submit" type="submit" value="Submit">
         </form>
