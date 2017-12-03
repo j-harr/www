@@ -17,7 +17,7 @@ form {
     width: auto;
 }
 
-form frmf1 {
+#frmf1 {
     display: none;
 }
 
