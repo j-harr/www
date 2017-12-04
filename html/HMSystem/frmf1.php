@@ -57,12 +57,6 @@ $sql .= "INSERT INTO Booking
 VALUES ('".$f1guestID."', '".$f1guestRMN."', '".$f1guestRATE.
 "', '".$f1guestCHIN."', '".$f1guestCHOT."', '1'); ";
 
-if($f1guestECN != ""){
-    $sql .= "
-    INSERT INTO EmergencyContact (GuestID,Name,PhoneNumber,Address)
-    VALUES ('".$f1guestID."', '".$f1guestECN."', '".$f1guestECPHN.
-    "', '".$f1guestECADR."');";
-}
 
 //$stmt = mysqli_prepare($sql);
 //$stmt->execute();
