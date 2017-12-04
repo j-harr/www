@@ -66,6 +66,8 @@ if($f1guestECN != ""){
     "', '".$f1guestECADR."');";
 }
 
+echo $sql;
+
 //$stmt = mysqli_prepare($sql);
 //$stmt->execute();
 
