@@ -54,13 +54,15 @@ $f1guestLN."', '".$f1guestSTR."', '".$f1guestCTY."', '".
 $f1guestSTE."', '".$f1guestCTRY."', '".$f1guestZIP."', '".
 $f1guestAGE."', '".$f1guestNIP."');";
 
-
+$sql .= "INSERT INTO Booking
+VALUES ('".$f1guestID."', '".$f1guestRN."', '".$f1guestRATE."', '".
+$f1guestCHIN."', '".$f1guestCHOT."', '".$f1guest."', '1');";
 
 //$stmt = mysqli_prepare($sql);
 //$stmt->execute();
 
 if (mysqli_query($conn, $sql)) {
-    echo "New record created successfully";
+    echo "New record added to Guest1";
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
