@@ -17,7 +17,6 @@
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
-        <div id="form1">
         <form id="frmf1" name="frmf1" action="">
             <div class="form-row">
                 <h3>Add Guest</h3>
@@ -86,7 +85,6 @@
                 <input class="button" type="submit" value="Submit" name="Submit1" id="Submit1"/>
             </div>
         </form>
-        </div>
 
         <form id="frmf2" name="frmf2" onsubmit="return validateForm()" method="post">
             <div class="form-row">
@@ -144,6 +142,10 @@
                 <input class="submit" type="submit" value="Submit">
             </div>
         </form>
+
+        <div id="Output">
+
+        </div>
 
         <script>
             var btnf1 = document.getElementById("btnf1");
@@ -291,7 +293,7 @@
                         url: "frmf1.php",
                         data: dataString,
                         success: function() {
-                            $('#form1').html("<div id='message'></div>");
+                            $('#Output').html("<div id='message'></div>");
                             $('#message').html("<h2>Record Submitted</h2>")
                             
                         }
