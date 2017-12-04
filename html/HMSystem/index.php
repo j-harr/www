@@ -3,15 +3,7 @@
     <head>
         <title>Hotel Management System</title>
         <link rel = "stylesheet" type = "text/css" href = "index.css"/>
-        <script>
-        function validateForm() {
-            var x = document.forms["searchBox"]["fName"].value;
-            if(x == "") {
-                alert("Please enter search data.");
-                return false;
-            }
-        }
-        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     </head>
     <body>
         <h1>Hotel Management System</h1>
