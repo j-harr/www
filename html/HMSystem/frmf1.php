@@ -48,14 +48,12 @@ function clean($data){
     return $data;
 }
 
-$sql = "
-INSERT INTO Guest1
+$sql = "INSERT INTO Guest1
 VALUES ('".$f1guestID."', '".$f1guestFN."', '".$f1guestMN."', '".
 $f1guestLN."', '".$f1guestSTR."', '".$f1guestCTY."', '".
 $f1guestSTE."', '".$f1guestCTRY."', '".$f1guestZIP."', '".
 $f1guestAGE."', '".$f1guestNIP."');";
-$sql .= "
-INSERT INTO 'Booking'
+$sql .= "INSERT INTO Booking
 VALUES ('".$f1guestID."', '".$f1guestRMN."', '".$f1guestRATE.
 "', '".$f1guestCHIN."', '".$f1guestCHOT."', '1');";
 
@@ -75,7 +73,6 @@ if (mysqli_query($conn, $sql)) {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
 
-$sql = ""
 
 mysqli_close($conn);
 ?>
