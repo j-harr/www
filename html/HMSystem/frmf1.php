@@ -61,12 +61,11 @@ $f1guestCHIN."', '".$f1guestCHOT."', '".$f1guest."', '1');";
 //$stmt = mysqli_prepare($sql);
 //$stmt->execute();
 
-if (mysqli_query($conn, $sql)) {
-    echo "New record added to Guest1";
+if ($conn->multi_query($sql) === TRUE) {
+    echo "New record created successsfully";
 } else {
-    echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+    echo "Error: " . $sql . "<br>" . $conn->error;
 }
 
-
-mysqli_close($conn);
+$conn->close();
 ?>
