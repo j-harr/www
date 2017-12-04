@@ -53,19 +53,18 @@ INSERT INTO Guest1
 VALUES ('".$f1guestID."', '".$f1guestFN."', '".$f1guestMN."', '".
 $f1guestLN."', '".$f1guestSTR."', '".$f1guestCTY."', '".
 $f1guestSTE."', '".$f1guestCTRY."', '".$f1guestZIP."', '".
-$f1guestAGE."', '".$f1guestNIP."');\n
-INSERT INTO Booking
+$f1guestAGE."', '".$f1guestNIP."');";
+$sql .= "
+INSERT INTO 'Booking'
 VALUES ('".$f1guestID."', '".$f1guestRMN."', '".$f1guestRATE.
 "', '".$f1guestCHIN."', '".$f1guestCHOT."', '1');";
 
 if($f1guestECN != ""){
-    $sql = $sql."
+    $sql .= "
     INSERT INTO EmergencyContact (GuestID,Name,PhoneNumber,Address)
     VALUES ('".$f1guestID."', '".$f1guestECN."', '".$f1guestECPHN.
     "', '".$f1guestECADR."');";
 }
-
-echo $sql;
 
 //$stmt = mysqli_prepare($sql);
 //$stmt->execute();
@@ -75,6 +74,8 @@ if (mysqli_query($conn, $sql)) {
 } else {
     echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }
+
+$sql = ""
 
 mysqli_close($conn);
 ?>
