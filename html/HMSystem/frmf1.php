@@ -53,7 +53,7 @@ INSERT INTO Guest1
 VALUES ('".$f1guestID."', '".$f1guestFN.
 "', '".$f1guestMN."', '".$f1guestLN."', '".$f1guestSTR."', '".
 $f1guestCTY."', '".$f1guestSTE."', '".$f1guestCTRY."', '". 
-$f1guestZIP."', '".$f1guestAGE."', '".$f1guestNIP."');
+$f1guestZIP."', '".$f1guestAGE."', '".$f1guestNIP."');\r\n
 
 INSERT INTO Booking
 VALUES ('".$f1guestID."', '".$f1guestRMN."', '".$f1guestRATE.
