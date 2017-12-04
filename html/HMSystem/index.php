@@ -225,13 +225,14 @@
                     $('.error').hide();
                     var gID = $("input#f1guestID").val();
                     var gFN = $("input#f1guestFN").val();
-                    var gMN = $("input#f1guestFN").val();
+                    var gMN = $("input#f1guestMN").val();
                     var gLN = $("input#f1guestLN").val();
                     var gPN = $("input#f1guestPN").val();
                     var gRN = $("input#f1guestRMN").val();
                     var gCHI = $("input#f1guestCHIN").val();
                     var gCHO = $("input#f1guestCHOT").val();
                     var gRATE = $("input#f1guestRATE").val();
+                    var gSTR = $("input#f1guestSTR").val();
                     var gCTY = $("input#f1guestCTY").val();
                     var gSTE = $("input#f1guestSTE").val();
                     var gCTRY = $("input#f1guestCTRY").val();
@@ -285,6 +286,7 @@
                     var dataString = 'f1guestID='+ gID + '&f1guestFN='+ gFN + '&f1guestMN='+ gMN +
                     '&f1guestLN='+ gLN + '&f1guestPN='+ gPN + '&f1guestRN='+ gRN +
                     '&f1guestCHI='+ gCHI + '&f1guestCHO='+ gCHO + '&f1guestRATE='+ gRATE +
+                    '&f1guestSTR='+ gSTR +
                     '&f1guestCTY='+ gCTY + '&f1guestSTE='+ gSTE + '&f1guestCTRY='+ gCTRY +
                     '&f1guestZIP='+ gZIP + '&f1guestAGE='+ gAGE + '&f1guestNIP='+ gNIP +
                     '&f1guestECN='+ gECN + '&f1guestECPHN='+ gECPHN + '&f1guestECADR='+ gECADR;
