@@ -1,7 +1,6 @@
 create table Room(
   RoomType varchar(25),
   RoomNumber int,
-  Occupied int,
   Capacity int,
   PRIMARY KEY (RoomNumber)
   );
@@ -49,6 +48,7 @@ create table Booking(
   RoomRate int,
   CheckInDate int,
   CheckOutDate int,
+  Occupied int,
   PRIMARY KEY (GuestID, RoomNumber),
   FOREIGN KEY (GuestID) references Guest1(GuestID),
   FOREIGN KEY (RoomNumber) references Room(RoomNumber)
@@ -110,3 +110,35 @@ create table UsedFS(
   FOREIGN KEY (GuestID) references Guest1(GuestID),
   FOREIGN KEY (FacilityID) references FAndS(FacilityID)
   );
+
+insert into room values('Single','100','2');
+insert into room values('Double','101','3');
+insert into room values('Single','102','2');
+insert into room values('Double','103','3');
+insert into room values('Single','104','2');
+insert into room values('Double','105','3');
+insert into room values('Single','106','2');
+insert into room values('Double','107','3');
+insert into room values('Single','108','2');
+insert into room values('Double','109','3');
+insert into room values('Single','200','2');
+insert into room values('Double','201','3');
+insert into room values('Single','202','2');
+insert into room values('Double','203','3');
+insert into room values('Single','204','2');
+insert into room values('Double','205','3');
+insert into room values('Single','206','2');
+insert into room values('Double','207','3');
+insert into room values('Single','208','2');
+insert into room values('Double','209','3');
+insert into room values('Suite','300','4');
+insert into room values('Suite','301','4');
+insert into room values('Suite','302','4');
+insert into room values('Suite','303','4');
+insert into room values('Suite','304','4');
+insert into room values('Suite','305','4');
+insert into room values('Suite','306','4');
+insert into room values('Suite','307','4');
+insert into room values('Suite','308','4');
+insert into room values('Suite','309','4');
+
