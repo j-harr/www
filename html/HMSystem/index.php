@@ -297,9 +297,6 @@
                         success: function() {
                             $('#Output').html("<div id='message'></div>");
                             $('#message').html("<h2>Record Submitted</h2>")
-                            .hide()
-                            .fadeIn(1500)
-                            });
                         }
                     });
                     return false;    
