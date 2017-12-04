@@ -69,10 +69,10 @@
                 <label>Room Number</label><input type="number" name="f1guestRMN">
             </div>
             <div class="form-row">
-                <label>Check In</label><input type="date" name="f1guestCHIN">
+                <label>Check In</label><input type="number" name="f1guestCHIN">
             </div>
             <div class="form-row">
-                <label>Check Out</label><input type="date" name="f1guestCHOT">
+                <label>Check Out</label><input type="number" name="f1guestCHOT">
             </div>
             <div class="form-row">
                 <label>Rate/night</label><input type="number" name="f1guestRATE">
