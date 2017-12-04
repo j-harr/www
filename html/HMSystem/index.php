@@ -285,7 +285,7 @@
                     }
                     var dataString = 'f1guestID='+ gID + '&f1guestFN='+ gFN + '&f1guestMN='+ gMN +
                     '&f1guestLN='+ gLN + '&f1guestPN='+ gPN + '&f1guestRMN='+ gRN +
-                    '&f1guestCHI='+ gCHI + '&f1guestCHO='+ gCHO + '&f1guestRATE='+ gRATE +
+                    '&f1guestCHIN='+ gCHI + '&f1guestCHOT='+ gCHO + '&f1guestRATE='+ gRATE +
                     '&f1guestSTR='+ gSTR +
                     '&f1guestCTY='+ gCTY + '&f1guestSTE='+ gSTE + '&f1guestCTRY='+ gCTRY +
                     '&f1guestZIP='+ gZIP + '&f1guestAGE='+ gAGE + '&f1guestNIP='+ gNIP +
