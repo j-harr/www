@@ -8,6 +8,11 @@ body {
     width: 90%;
 }
 
+.button {
+    text-align: center;
+    width: 80px;
+}
+
 form {
     align-content: center;
     display: flex;
@@ -82,7 +87,3 @@ label {
 .f5btn {background-color: lightblue;}
 .f6btn {background-color: lavender;}
 
-.submit {
-    text-align: center;
-    width: 80px;
-}
