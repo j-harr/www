@@ -117,7 +117,7 @@
                 <h3>Search Room</h3>
             </div>
             <div class="form-row">
-                <label>Room Number</label><input type="number" name="f4roomNum" id="f4RoomNum">
+                <label>Room Number</label><input type="number" name="f4RoomNum" id="f4RoomN">
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit4">
@@ -328,6 +328,24 @@
                     $.ajax({
                         type: "POST",
                         url: "frmf3.php",
+                        data: dataString,
+                        success: function(result) {
+                            $('#Output').html(result);
+                        }
+                    });
+                    return false;    
+                });
+                $("#Submit4").click(function() {
+                    var rMN = $("input#f4RoomN").val();
+                    if(rMN == ""){
+                        $("label#f1guestID_error").show();
+                        $("input#f1guestID").focus();
+                        return false;
+                    }
+                    var dataString = 'f4RoomNum='+ rMN;
+                    $.ajax({
+                        type: "POST",
+                        url: "frmf4.php",
                         data: dataString,
                         success: function(result) {
                             $('#Output').html(result);
