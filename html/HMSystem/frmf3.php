@@ -27,9 +27,9 @@ function clean($data){
     return $data;
 }
 
-$sql = "SELECT * FROM Guest1 G1, Guest2 G2, Room R, Booking Bo
-WHERE G1.GuestID='".$f3guestID."' AND G1.GuestID=G2.GuestID AND
-G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
+$sql = "SELECT * FROM Guest1;";// G1, Guest2 G2, Room R, Booking Bo
+//WHERE G1.GuestID='".$f3guestID."' AND G1.GuestID=G2.GuestID AND
+//G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
 
 $result=mysqli_query($sql,$conn);
 echo "<table border='1' >";
@@ -48,7 +48,6 @@ while($data = mysqli_fetch_row($result))
     echo "<td>$data[8]</td>";
     echo "<td>$data[9]</td>";
     echo "<td>$data[10]</td>";
-    echo "<td>$data[11]</td>";
 }
 echo "</table>";
 if ($conn->multi_query($sql) === TRUE) {
