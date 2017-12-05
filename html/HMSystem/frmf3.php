@@ -55,7 +55,7 @@ while($data = $result->fetch_assoc())
 }
 echo "</table>";
 } else {
-    echo "0 results";
+    echo "0 results\n";
 }
 if ($conn->multi_query($sql) === TRUE) {
     echo "Query executed.";
