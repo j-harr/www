@@ -29,9 +29,9 @@ function clean($data){
 
 $sql = "SELECT * FROM Guest1 G1, Guest2 G2, Room R, Booking Bo
 WHERE G1.GuestID='".$f3guestID."
-AND G1.GuestID= G2.GuestID 
-AND G1.GuestID= Bo.GuestID 
-AND Bo.RoomNumber= R.RoomNumber;";
+AND G1.GuestID=G2.GuestID 
+AND G1.GuestID=Bo.GuestID 
+AND Bo.RoomNumber=R.RoomNumber;";
 
 $result = $conn->query($sql);
 echo "<table border='1' >";
