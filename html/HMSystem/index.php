@@ -100,15 +100,15 @@
             </div>
         </form>
 
-        <form id="frmf3" name="frmf3" onsubmit="return validateForm()" method="post">
+        <form id="frmf3" name="frmf3" onsubmit="" method="post">
             <div class="form-row">
                 <h3>Search Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="number" name="f3guestID">
+                <label>Guest ID</label><input type="number" name="f3guestID" id="f3guestID">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="button" type="submit" value="Submit" id="Submit3">
             </div>
         </form>
 
@@ -310,6 +310,24 @@
                     $.ajax({
                         type: "POST",
                         url: "frmf2.php",
+                        data: dataString,
+                        success: function(result) {
+                            $('#Output').html(result);
+                        }
+                    });
+                    return false;    
+                });
+                $("#Submit3").click(function() {
+                    var gID = $("input#f3guestID").val();
+                    if(gID == ""){
+                        $("label#f1guestID_error").show();
+                        $("input#f1guestID").focus();
+                        return false;
+                    }
+                    var dataString = 'f3guestID='+ gID;
+                    $.ajax({
+                        type: "POST",
+                        url: "frmf3.php",
                         data: dataString,
                         success: function(result) {
                             $('#Output').html(result);
