@@ -17,6 +17,8 @@
             <button class="menuButton f6btn" id="btnf6">Tender Payment</button>
         </div>
         <hr>
+        <div class="body-block">
+        <div class="body-chunk">
         <form id="frmf1" name="frmf1" action="">
             <div class="form-row">
                 <h3>Add Guest</h3>
@@ -142,9 +144,10 @@
                 <input class="submit" type="submit" value="Submit">
             </div>
         </form>
-
-        <div id="Output">
-
+        </div>
+        <div class="body-chunk">
+            <div id="Output"></div>
+        </div>
         </div>
 
         <script>
@@ -218,9 +221,7 @@
 
             
             $(function() {
-                $('.error').hide();
                 $("#Submit1").click(function() {
-                    $('.error').hide();
                     var gID = $("input#f1guestID").val();
                     var gFN = $("input#f1guestFN").val();
                     var gMN = $("input#f1guestMN").val();

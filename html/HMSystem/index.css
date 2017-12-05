@@ -8,6 +8,18 @@ body {
     width: 90%;
 }
 
+.body-block {
+    display: flex;
+    flex-direction: row;
+}
+
+.body-chunk {
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    width: 50%;
+}
+
 .button {
     text-align: center;
     width: 80px;
@@ -86,4 +98,9 @@ label {
 .f4btn {background-color: lightgreen;}
 .f5btn {background-color: lightblue;}
 .f6btn {background-color: lavender;}
+
+#Output {
+    border: 5px solid black;
+    height: auto;
+}
 
