@@ -10,7 +10,7 @@ body {
 
 .body-block {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .body-chunk {
