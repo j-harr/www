@@ -219,9 +219,7 @@
             
             $(function() {
                 $('.error').hide();
-                $(".button").click(function() {
-                    //validate and process form here
-
+                $("#Submit1").click(function() {
                     $('.error').hide();
                     var gID = $("input#f1guestID").val();
                     var gFN = $("input#f1guestFN").val();
@@ -294,9 +292,8 @@
                         type: "POST",
                         url: "frmf1.php",
                         data: dataString,
-                        success: function() {
-                            $('#Output').html("<div id='message'></div>");
-                            $('#message').html("<h2>Record Submitted</h2>")
+                        success: function(result) {
+                            $('#Output').html(result);
                         }
                     });
                     return false;    
