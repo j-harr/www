@@ -138,10 +138,10 @@
                 <h3>Tender Payment</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="text" name="f6guestID">
+                <label>Guest ID</label><input type="text" name="f6guestID" id="f6guestID">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="button" type="submit" value="Submit" id="Submit6">
             </div>
         </form>
         </div>
@@ -358,6 +358,24 @@
                     $.ajax({
                         type: "POST",
                         url: "frmf5.php",
+                        data: dataString,
+                        success: function(result) {
+                            $('#Output').html(result);
+                        }
+                    });
+                    return false;    
+                });
+                $("#Submit6").click(function() {
+                    var gID = $("input#f6guestID").val();
+                    if(gID == ""){
+                        $("label#f1guestID_error").show();
+                        $("input#f1guestID").focus();
+                        return false;
+                    }
+                    var dataString = 'f6guestID='+ gID;
+                    $.ajax({
+                        type: "POST",
+                        url: "frmf6.php",
                         data: dataString,
                         success: function(result) {
                             $('#Output').html(result);
