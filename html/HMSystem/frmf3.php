@@ -27,9 +27,9 @@ function clean($data){
     return $data;
 }
 
-$sql = "SELECT * FROM Guest1;";// G1, Guest2 G2, Room R, Booking Bo
-//WHERE G1.GuestID='".$f3guestID."' AND G1.GuestID=G2.GuestID AND
-//G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
+$sql = "SELECT * FROM Guest1 G1, Guest2 G2, Room R, Booking Bo
+WHERE G1.GuestID='".$f3guestID."' AND G1.GuestID=G2.GuestID AND
+G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
 
 $result = $conn->query($sql);
 echo "<table border='1' >";
@@ -39,20 +39,20 @@ while($data = $result->fetch_assoc())
     echo "<tr>";
     echo "<td>".$data["GuestID"]."</td>";
     echo "<td>".$data["F_Name"]."</td>";
-    echo "<td>".$data[2]."</td>";
-    echo "<td>".$data[3]."</td>";
-    echo "<td>".$data[4]."</td>";
-    echo "<td>".$data[5]."</td>";
-    echo "<td>".$data[6]."</td>";
-    echo "<td>".$data[7]."</td>";
-    echo "<td>".$data[8]."</td>";
-    echo "<td>".$data[9]."</td>";
-    echo "<td>".$data[10]."</td>";
+    echo "<td>".$data["M_Name"]."</td>";
+    echo "<td>".$data["L_Name"]."</td>";
+    echo "<td>".$data["Street"]."</td>";
+    echo "<td>".$data["City"]."</td>";
+    echo "<td>".$data["State"]."</td>";
+    echo "<td>".$data["Country"]."</td>";
+    echo "<td>".$data["ZIP"]."</td>";
+    echo "<td>".$data["Age"]."</td>";
+    echo "<td>".$data["NumInParty"]."</td>";
     echo "</tr>";
 }
 echo "</table>";
 if ($conn->multi_query($sql) === TRUE) {
-    echo "Guest ".$f2guestID." record removed successsfully.";
+    echo "Query executed.";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
