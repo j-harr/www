@@ -56,7 +56,7 @@ if ($result->num_rows > 0) {
     }
     echo "</table>";
 } else {
-    echo "0 results\n";
+    echo "0 results<br>";
 }
 if ($conn->multi_query($sql) === TRUE) {
     echo "Query executed.";
