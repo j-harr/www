@@ -112,15 +112,15 @@
             </div>
         </form>
 
-        <form id="frmf4" name="frmf4" onsubmit="return validateForm()" method="post">
+        <form id="frmf4" name="frmf4" onsubmit="" method="post">
             <div class="form-row">
                 <h3>Search Room</h3>
             </div>
             <div class="form-row">
-                <label>Room Number</label><input type="number" name="f4roomNum">
+                <label>Room Number</label><input type="number" name="f4roomNum" id="f4RoomNum">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="button" type="submit" value="Submit" id="Submit4">
             </div>
         </form>
 
