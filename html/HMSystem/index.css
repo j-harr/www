@@ -100,6 +100,7 @@ label {
 .f6btn {background-color: lavender;}
 
 #Output {
+    background-color: lightgray;
     border: 5px solid black;
     height: auto;
     width: 100%;
