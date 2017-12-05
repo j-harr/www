@@ -102,6 +102,8 @@ label {
 #Output {
     background-color: lightgray;
     border: 5px solid black;
+    color: black;
+    font-family: Courier New, Courier, monospace;
     height: auto;
     width: 100%;
 }
