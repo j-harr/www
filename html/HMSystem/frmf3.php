@@ -31,10 +31,10 @@ $sql = "SELECT * FROM Guest1;";// G1, Guest2 G2, Room R, Booking Bo
 //WHERE G1.GuestID='".$f3guestID."' AND G1.GuestID=G2.GuestID AND
 //G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
 
-$result=mysqli_query($sql,$conn);
+$result = $conn->query($sql);
 echo "<table border='1' >";
 
-while($data = mysqli_fetch_row($result))
+while($data = $result->fetch_assoc())
 {
     echo "<tr>";
     echo "<td>$data[0]</td>";
