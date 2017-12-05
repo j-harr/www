@@ -27,8 +27,8 @@ function clean($data){
     return $data;
 }
 
-$sql = "SELECT * FROM Guest1 G1".//, Guest2 G2, Room R, Booking Bo
-"WHERE G1.GuestID='".$f3guestID."';";// AND G1.GuestID=G2.GuestID AND
+$sql = "SELECT * FROM Guest1 G1 WHERE G1.GuestID='".$f3guestID."';";//, Guest2 G2, Room R, Booking Bo
+//"";// AND G1.GuestID=G2.GuestID AND
 //G1.GuestID=Bo.GuestID AND Bo.RoomNumber=R.RoomNumber;";
 
 $result = $conn->query($sql);
