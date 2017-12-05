@@ -34,26 +34,27 @@ AND G1.GuestID=Bo.GuestID
 AND Bo.RoomNumber=R.RoomNumber;";
 
 $result = $conn->query($sql);
-echo "<table border='1' >";
+
 
 if ($result->num_rows > 0) {
-while($data = $result->fetch_assoc())
-{
-    echo "<tr>";
-    echo "<td>".$data["GuestID"]."</td>";
-    echo "<td>".$data["F_Name"]."</td>";
-    echo "<td>".$data["M_Name"]."</td>";
-    echo "<td>".$data["L_Name"]."</td>";
-    echo "<td>".$data["Street"]."</td>";
-    echo "<td>".$data["City"]."</td>";
-    echo "<td>".$data["State"]."</td>";
-    echo "<td>".$data["Country"]."</td>";
-    echo "<td>".$data["ZIP"]."</td>";
-    echo "<td>".$data["Age"]."</td>";
-    echo "<td>".$data["NumInParty"]."</td>";
-    echo "</tr>";
-}
-echo "</table>";
+    echo "<table border='1' >";
+    while($data = $result->fetch_assoc())
+    {
+        echo "<tr>";
+        echo "<td>".$data["GuestID"]."</td>";
+        echo "<td>".$data["F_Name"]."</td>";
+        echo "<td>".$data["M_Name"]."</td>";
+        echo "<td>".$data["L_Name"]."</td>";
+        echo "<td>".$data["Street"]."</td>";
+        echo "<td>".$data["City"]."</td>";
+        echo "<td>".$data["State"]."</td>";
+        echo "<td>".$data["Country"]."</td>";
+        echo "<td>".$data["ZIP"]."</td>";
+        echo "<td>".$data["Age"]."</td>";
+        echo "<td>".$data["NumInParty"]."</td>";
+        echo "</tr>";
+    }
+    echo "</table>";
 } else {
     echo "0 results\n";
 }
