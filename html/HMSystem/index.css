@@ -10,7 +10,7 @@ body {
 
 .body-block {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .body-chunk {
@@ -102,5 +102,6 @@ label {
 #Output {
     border: 5px solid black;
     height: auto;
+    width: 100%;
 }
 
