@@ -96,7 +96,7 @@
                 <label>Guest ID</label><input type="number" name="f2guestID">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="submit" type="submit" value="Submit" id="Submit2">
             </div>
         </form>
 
@@ -292,6 +292,24 @@
                     $.ajax({
                         type: "POST",
                         url: "frmf1.php",
+                        data: dataString,
+                        success: function(result) {
+                            $('#Output').html(result);
+                        }
+                    });
+                    return false;    
+                });
+                $("#Submit2").click(function() {
+                    var gID = $("input#f2guestID").val();
+                    if(gID == ""){
+                        $("label#f1guestID_error").show();
+                        $("input#f1guestID").focus();
+                        return false;
+                    }
+                    var dataString = 'f2guestID='+ gID;
+                    $.ajax({
+                        type: "POST",
+                        url: "frmf2.php",
                         data: dataString,
                         success: function(result) {
                             $('#Output').html(result);
