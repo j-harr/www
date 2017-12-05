@@ -33,22 +33,18 @@ FROM(
 SELECT G1.GuestID, (RoomRate*DayStaying) AS TotalCost
 FROM Guest1 G1, Booking Bo
 WHERE G1.GuestID='".$f6guestID."' AND Bo.GuestID=G1.GuestID
-GROUP BY G1.GuestID
 
 UNION
 
 SELECT G1.GuestID, SUM(FoodCost) AS TotalCost
 FROM Guest1 G1, Food F, Buy B
 WHERE G1.GuestID='".$f6guestID."' AND G1.GuestID=B.GuestID AND B.FoodID=F.FoodID
-GROUP BY G1.GuestID
 
 UNION
 
 SELECT G1.GuestID, SUM(FSRate) AS TotalCost
 FROM Guest1 G1, FAndS FS, UsedFS U
-WHERE G1.GuestID='6' AND G1.GuestID=U.GuestID AND FS.FacilityID=U.FacilityID
-GROUP BY G1.GuestID) AS T
-GROUP BY GuestID;";
+WHERE G1.GuestID='".$f6guestID."' AND G1.GuestID=U.GuestID AND FS.FacilityID=U.FacilityID) AS T;";
 
 $result = $conn->query($sql);
 
