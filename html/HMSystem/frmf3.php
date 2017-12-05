@@ -34,7 +34,7 @@ $sql = "SELECT * FROM Guest1;";// G1, Guest2 G2, Room R, Booking Bo
 $result=mysqli_query($sql,$conn);
 echo "<table border='1' >";
 
-while($data = mysqli_fetch($result))
+while($data = mysqli_fetch_row($result))
 {
     echo "<tr>";
     echo "<td>$data[0]</td>";
