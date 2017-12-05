@@ -124,12 +124,12 @@
             </div>
         </form>
 
-        <form id="frmf5" name="frmf5" onsubmit="return validateForm()" method="post">
+        <form id="frmf5" name="frmf5" onsubmit="" method="post">
             <div class="form-row">
                 <h3>Available Rooms</h3>
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit">
+                <input class="button" type="submit" value="Submit" id="Submit5">
             </div>
         </form>
 
@@ -346,6 +346,18 @@
                     $.ajax({
                         type: "POST",
                         url: "frmf4.php",
+                        data: dataString,
+                        success: function(result) {
+                            $('#Output').html(result);
+                        }
+                    });
+                    return false;    
+                });
+                $("#Submit5").click(function() {
+                    var dataString ='';
+                    $.ajax({
+                        type: "POST",
+                        url: "frmf5.php",
                         data: dataString,
                         success: function(result) {
                             $('#Output').html(result);
