@@ -88,15 +88,15 @@
             </div>
         </form>
 
-        <form id="frmf2" name="frmf2" onsubmit="return validateForm()" method="post">
+        <form id="frmf2" name="frmf2" onsubmit="" method="post">
             <div class="form-row">
                 <h3>Remove Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="number" name="f2guestID">
+                <label>Guest ID</label><input type="number" name="f2guestID" id="f2guestID">
             </div>
             <div class="form-row">
-                <input class="submit" type="submit" value="Submit" id="Submit2">
+                <input class="button" type="submit" value="Submit" id="Submit2">
             </div>
         </form>
 
