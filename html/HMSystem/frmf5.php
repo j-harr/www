@@ -21,6 +21,7 @@ $result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
+    echo "<div style="overflow-x:auto;">";
     echo "<table border='1' >";
     echo "<tr>";
     echo "<td>Room Number</td>";
@@ -36,6 +37,7 @@ if ($result->num_rows > 0) {
         echo "</tr>";
     }
     echo "</table>";
+    echo "</div>";
 } else {
     echo "0 results<br>";
 }

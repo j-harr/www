@@ -110,8 +110,20 @@ label {
     width: 100%;
 }
 
-td {
-    padding: 0 5px 0 5px;
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
     text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: lightblue;
+}
+
+th {
+    font-size: 16px;
 }
 
