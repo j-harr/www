@@ -79,7 +79,7 @@ if($f1guestECN != ""){
 }
 
 if ($conn->multi_query($sql) === TRUE) {
-    echo "Guest added successfully";
+    echo "Guest added successfully.";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

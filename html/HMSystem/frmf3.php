@@ -37,7 +37,27 @@ $result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
-    echo "<table border='1' >";
+    echo "<div style='overflow-x:auto;'>";
+    echo "<table>";
+    echo "<tr>";
+    echo "<td>Guest ID</td>";
+    echo "<td>First Name</td>";
+    echo "<td>Middle Name</td>";
+    echo "<td>Last Name</td>";
+    echo "<td>Street</td>";
+    echo "<td>City</td>";
+    echo "<td>State</td>";
+    echo "<td>Country</td>";
+    echo "<td>ZIP Code</td>";
+    echo "<td>Age</td>";
+    echo "<td>Num. In Party</td>";
+    echo "<td>Phone Number</td>";
+    echo "<td>Room Number</td>";
+    echo "<td>Room Type</td>";
+    echo "<td>Capacity</td>";
+    echo "<td>Room Rate</td>";
+    echo "<td>Days Staying</td>";
+    echo "</tr>";
     while($data = $result->fetch_assoc())
     {
         echo "<tr>";
@@ -52,11 +72,18 @@ if ($result->num_rows > 0) {
         echo "<td>".$data["ZIP"]."</td>";
         echo "<td>".$data["Age"]."</td>";
         echo "<td>".$data["NumInParty"]."</td>";
+        echo "<td>".$data["PhoneNumber"]."</td>";
+        echo "<td>".$data["RoomNumber"]."</td>";
+        echo "<td>".$data["RoomType"]."</td>";
+        echo "<td>".$data["Capacity"]."</td>";
+        echo "<td>".$data["RoomRate"]."</td>";
+        echo "<td>".$data["DayStaying"]."</td>";
         echo "</tr>";
     }
     echo "</table>";
+    echo "</div>";
 } else {
-    echo "0 results<br>";
+    echo "0 results<br><br>";
 }
 if ($conn->multi_query($sql) === TRUE) {
     echo "Query executed.";
