@@ -206,6 +206,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
