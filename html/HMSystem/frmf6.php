@@ -51,6 +51,10 @@ $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
     echo "<table border='1' >";
+    echo "<tr>";
+    echo "<td>Guest ID</td>";
+    echo "<td>Total Cost</td>";
+    echo "</tr>";
     while($data = $result->fetch_assoc())
     {
         echo "<tr>";
