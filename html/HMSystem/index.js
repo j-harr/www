@@ -78,6 +78,8 @@ $(function() {
         var gMN = $("input#f1guestMN").val();
         var gLN = $("input#f1guestLN").val();
         var gPN = $("input#f1guestPN").val();
+        var gPN2 = $("input#f1guestPN2").val();
+        var gPN3 = $("input#f1guestPN3").val();
         var gRN = $("input#f1guestRMN").val();
         var gDS = $("input#f1guestDS").val();
         var gRATE = $("input#f1guestRATE").val();
