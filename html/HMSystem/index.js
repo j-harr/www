@@ -1,3 +1,4 @@
+window.onload = function(){
 var btnf1 = document.getElementById("btnf1");
 var btnf2 = document.getElementById("btnf2");
 var btnf3 = document.getElementById("btnf3");
@@ -228,3 +229,4 @@ $(function() {
         return false;    
     });
 });
+}
