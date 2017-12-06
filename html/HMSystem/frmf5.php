@@ -24,9 +24,9 @@ if ($result->num_rows > 0) {
     echo "<div style='overflow-x:auto;'>";
     echo "<table>";
     echo "<tr>";
-    echo "<td>Room Number</td>";
-    echo "<td>Room Type</td>";
-    echo "<td>Capacity</td>";
+    echo "<th>Room Number</th>";
+    echo "<th>Room Type</th>";
+    echo "<th>Capacity</th>";
     echo "</tr>";
     while($data = $result->fetch_assoc())
     {
@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
     echo "</table>";
     echo "</div>";
 } else {
-    echo "0 results<br>";
+    echo "0 results<br><br>";
 }
 if ($conn->multi_query($sql) === TRUE) {
     echo "Query executed.";

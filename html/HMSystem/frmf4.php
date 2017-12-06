@@ -37,7 +37,27 @@ $result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
-    echo "<table border='1' >";
+    echo '<div style="overflow-x:auto;">';
+    echo "<table>";
+    echo "<tr>";
+    echo "<th>Guest ID</th>";
+    echo "<th>First Name</th>";
+    echo "<th>Middle Name</th>";
+    echo "<th>Last Name</th>";
+    echo "<th>Street</th>";
+    echo "<th>City</th>";
+    echo "<th>State</th>";
+    echo "<th>Country</th>";
+    echo "<th>ZIP Code</th>";
+    echo "<th>Age</th>";
+    echo "<th>Num. In Party</th>";
+    echo "<th>Phone Number</th>";
+    echo "<th>Room Number</th>";
+    echo "<th>Room Type</th>";
+    echo "<th>Capacity</th>";
+    echo "<th>Room Rate</th>";
+    echo "<th>Days Staying</th>";
+    echo "</tr>";
     while($data = $result->fetch_assoc())
     {
         echo "<tr>";
@@ -52,9 +72,16 @@ if ($result->num_rows > 0) {
         echo "<td>".$data["ZIP"]."</td>";
         echo "<td>".$data["Age"]."</td>";
         echo "<td>".$data["NumInParty"]."</td>";
+        echo "<td>".$data["PhoneNumber"]."</td>";
+        echo "<td>".$data["RoomNumber"]."</td>";
+        echo "<td>".$data["RoomType"]."</td>";
+        echo "<td>".$data["Capacity"]."</td>";
+        echo "<td>".$data["RoomRate"]."</td>";
+        echo "<td>".$data["DayStaying"]."</td>";
         echo "</tr>";
     }
     echo "</table>";
+    echo "</div>";
 } else {
     echo "0 results<br><br>";
 }

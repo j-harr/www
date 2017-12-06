@@ -113,6 +113,7 @@ label {
 table {
     border-collapse: collapse;
     border: 2px solid black;
+    max-width: 800px;
     width: 100%;
 }
 

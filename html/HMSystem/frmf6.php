@@ -52,8 +52,8 @@ $result = $conn->query($sql);
 if ($result->num_rows > 0) {
     echo "<table border='1' >";
     echo "<tr>";
-    echo "<td>Guest ID</td>";
-    echo "<td>Total Cost</td>";
+    echo "<th>Guest ID</th>";
+    echo "<th>Total Cost</th>";
     echo "</tr>";
     while($data = $result->fetch_assoc())
     {
@@ -64,7 +64,7 @@ if ($result->num_rows > 0) {
     }
     echo "</table>";
 } else {
-    echo "0 results<br>";
+    echo "0 results<br><br>";
 }
 if ($conn->multi_query($sql) === TRUE) {
     echo "Query executed.";
