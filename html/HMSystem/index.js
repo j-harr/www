@@ -127,7 +127,7 @@ $(function() {
             return false;
         }
         var dataString = 'f1guestID='+ gID + '&f1guestFN='+ gFN + '&f1guestMN='+ gMN +
-        '&f1guestLN='+ gLN + '&f1guestPN='+ gPN + '&f1guestPN='+ gPN2 + '&f1guestRMN='+ gRN +
+        '&f1guestLN='+ gLN + '&f1guestPN='+ gPN + '&f1guestPN2='+ gPN2 + '&f1guestRMN='+ gRN +
         '&f1guestDS='+ gDS + '&f1guestRATE='+ gRATE + '&f1guestPN3='+ gPN3 +
         '&f1guestSTR='+ gSTR +
         '&f1guestCTY='+ gCTY + '&f1guestSTE='+ gSTE + '&f1guestCTRY='+ gCTRY +
