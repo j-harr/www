@@ -4,6 +4,8 @@
         <title>Hotel Management System</title>
         <link rel = "stylesheet" type = "text/css" href = "index.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="index.js"
+
     </head>
     <body>
         <h1>Hotel Management System</h1>
@@ -18,13 +20,13 @@
         </div>
         <hr>
         <div class="body-block">
-        <div class="body-chunk">
+        <div class="body-chunk" style="width: 25%;">
         <form id="frmf1" name="frmf1" action="">
             <div class="form-row">
                 <h3>Add Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="number" name="f1guestID" id="f1guestID"/>
+                <label>Guest ID *</label><input type="number" name="f1guestID" id="f1guestID" required/>
             </div>
             <div class="form-row">
                 <label>First Name</label><input type="text" name="f1guestFN" id="f1guestFN"/>
@@ -36,7 +38,13 @@
                 <label>Last Name</label><input type="text" name="f1guestLN" id="f1guestLN"/>
             </div>
             <div class="form-row">
-                <label>Phone Number</label><input type="tel" name="f1guestPN" id="f1guestPN"/>
+                <label>Primary Phone</label><input type="tel" name="f1guestPN" id="f1guestPN"/>
+            </div>
+            <div class="form-row">
+                <label>Phone 2</label><input type="tel" name="f1guestPN2" id="f1guestPN2"/>
+            </div>
+            <div class="form-row">
+                <label>Phone 3</label><input type="tel" name="f1guestPN3" id="f1guestPN3"/>
             </div>
             <div class="form-row">
                 <label>Street</label><input type="text" name="f1guestSTR" id="f1guestSTR"/>
@@ -63,10 +71,7 @@
                 <label>Room Number</label><input type="number" name="f1guestRMN" id="f1guestRMN"/>
             </div>
             <div class="form-row">
-                <label>Check In</label><input type="number" name="f1guestCHIN" id="f1guestCHIN"/>
-            </div>
-            <div class="form-row">
-                <label>Check Out</label><input type="number" name="f1guestCHOT" id="f1guestCHOT"/>
+                <label>Days Staying</label><input type="number" name="f1guestDS" id="f1guestDS"/>
             </div>
             <div class="form-row">
                 <label>Rate/night</label><input type="number" name="f1guestRATE" id="f1guestRATE"/>
@@ -145,245 +150,9 @@
             </div>
         </form>
         </div>
-        <div class="body-chunk">
+        <div class="body-chunk" style="width: 75%;">
             <div id="Output"></div>
         </div>
         </div>
-
-        <script>
-            var btnf1 = document.getElementById("btnf1");
-            var btnf2 = document.getElementById("btnf2");
-            var btnf3 = document.getElementById("btnf3");
-            var btnf4 = document.getElementById("btnf4");
-            var btnf5 = document.getElementById("btnf5");
-            var btnf6 = document.getElementById("btnf6");
-
-            var frmf1 = document.getElementById("frmf1");
-            var frmf2 = document.getElementById("frmf2");
-            var frmf3 = document.getElementById("frmf3");
-            var frmf4 = document.getElementById("frmf4");
-            var frmf5 = document.getElementById("frmf5");
-            var frmf6 = document.getElementById("frmf6");
-
-            btnf1.onclick = function btnf1Click() {
-                frmf2.style.display = "none";
-                frmf3.style.display = "none";
-                frmf4.style.display = "none";
-                frmf5.style.display = "none";
-                frmf6.style.display = "none";                
-                frmf1.style.display = "flex";
-            }
-
-            btnf2.onclick = function btnf2Click() {
-                frmf3.style.display = "none";
-                frmf4.style.display = "none";
-                frmf5.style.display = "none";
-                frmf6.style.display = "none";                
-                frmf1.style.display = "none";
-                frmf2.style.display = "flex";
-            }
-
-            btnf3.onclick = function btnf3Click() {
-                frmf2.style.display = "none";
-                frmf4.style.display = "none";
-                frmf5.style.display = "none";
-                frmf6.style.display = "none";                
-                frmf1.style.display = "none";
-                frmf3.style.display = "flex";
-            }
-
-            btnf4.onclick = function btnf4Click() {
-                frmf2.style.display = "none";
-                frmf3.style.display = "none";
-                frmf5.style.display = "none";
-                frmf6.style.display = "none";                
-                frmf1.style.display = "none";
-                frmf4.style.display = "flex";
-            }
-
-            btnf5.onclick = function btnf5Click() {
-                frmf2.style.display = "none";
-                frmf3.style.display = "none";
-                frmf4.style.display = "none";
-                frmf6.style.display = "none";                
-                frmf1.style.display = "none";
-                frmf5.style.display = "flex";
-            }
-
-            btnf6.onclick = function btnf6Click() {
-                frmf2.style.display = "none";
-                frmf3.style.display = "none";
-                frmf4.style.display = "none";
-                frmf5.style.display = "none";               
-                frmf1.style.display = "none";
-                frmf6.style.display = "flex";
-            }
-
-            
-            $(function() {
-                $("#Submit1").click(function() {
-                    var gID = $("input#f1guestID").val();
-                    var gFN = $("input#f1guestFN").val();
-                    var gMN = $("input#f1guestMN").val();
-                    var gLN = $("input#f1guestLN").val();
-                    var gPN = $("input#f1guestPN").val();
-                    var gRN = $("input#f1guestRMN").val();
-                    var gCHI = $("input#f1guestCHIN").val();
-                    var gCHO = $("input#f1guestCHOT").val();
-                    var gRATE = $("input#f1guestRATE").val();
-                    var gSTR = $("input#f1guestSTR").val();
-                    var gCTY = $("input#f1guestCTY").val();
-                    var gSTE = $("input#f1guestSTE").val();
-                    var gCTRY = $("input#f1guestCTRY").val();
-                    var gZIP = $("input#f1guestZIP").val();
-                    var gAGE = $("input#f1guestAGE").val();
-                    var gNIP = $("input#f1guestNIP").val();
-                    var gECN = $("input#f1guestECN").val();
-                    var gECPHN = $("input#f1guestECPHN").val();
-                    var gECADR = $("input#f1guestECADR").val();
-
-                    if(gID == ""){
-                        $("label#f1guestID_error").show();
-                        $("input#f1guestID").focus();
-                        return false;
-                    }
-                    if(gFN == ""){
-                        $("label#f1guestFN_error").show();
-                        $("input#f1guestFN").focus();
-                        return false;
-                    }
-                    if(gLN == ""){
-                        $("label#f1guestLN_error").show();
-                        $("input#f1guestLN").focus();
-                        return false;
-                    }
-                    if(gPN == ""){
-                        $("label#f1guestPN_error").show();
-                        $("input#f1guestPN").focus();
-                        return false;
-                    }
-                    if(gRN == ""){
-                        $("label#f1guestRMN_error").show();
-                        $("input#f1guestRMN").focus();
-                        return false;
-                    }
-                    if(gCHI == ""){
-                        $("label#f1guestCHIN_error").show();
-                        $("input#f1guestCHIN").focus();
-                        return false;
-                    }
-                    if(gCHO == ""){
-                        $("label#f1guestCHOT_error").show();
-                        $("input#f1guestCHOT").focus();
-                        return false;
-                    }
-                    if(gFN == ""){
-                        $("label#f1guestFN_error").show();
-                        $("input#f1guestFN").focus();
-                        return false;
-                    }
-                    var dataString = 'f1guestID='+ gID + '&f1guestFN='+ gFN + '&f1guestMN='+ gMN +
-                    '&f1guestLN='+ gLN + '&f1guestPN='+ gPN + '&f1guestRMN='+ gRN +
-                    '&f1guestCHIN='+ gCHI + '&f1guestCHOT='+ gCHO + '&f1guestRATE='+ gRATE +
-                    '&f1guestSTR='+ gSTR +
-                    '&f1guestCTY='+ gCTY + '&f1guestSTE='+ gSTE + '&f1guestCTRY='+ gCTRY +
-                    '&f1guestZIP='+ gZIP + '&f1guestAGE='+ gAGE + '&f1guestNIP='+ gNIP +
-                    '&f1guestECN='+ gECN + '&f1guestECPHN='+ gECPHN + '&f1guestECADR='+ gECADR;
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf1.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-                $("#Submit2").click(function() {
-                    var gID = $("input#f2guestID").val();
-                    if(gID == ""){
-                        $("label#f1guestID_error").show();
-                        $("input#f1guestID").focus();
-                        return false;
-                    }
-                    var dataString = 'f2guestID='+ gID;
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf2.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-                $("#Submit3").click(function() {
-                    var gID = $("input#f3guestID").val();
-                    if(gID == ""){
-                        $("label#f1guestID_error").show();
-                        $("input#f1guestID").focus();
-                        return false;
-                    }
-                    var dataString = 'f3guestID='+ gID;
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf3.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-                $("#Submit4").click(function() {
-                    var rMN = $("input#f4RoomN").val();
-                    if(rMN == ""){
-                        $("label#f1guestID_error").show();
-                        $("input#f1guestID").focus();
-                        return false;
-                    }
-                    var dataString = 'f4RoomNum='+ rMN;
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf4.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-                $("#Submit5").click(function() {
-                    var dataString ='';
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf5.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-                $("#Submit6").click(function() {
-                    var gID = $("input#f6guestID").val();
-                    if(gID == ""){
-                        $("label#f1guestID_error").show();
-                        $("input#f1guestID").focus();
-                        return false;
-                    }
-                    var dataString = 'f6guestID='+ gID;
-                    $.ajax({
-                        type: "POST",
-                        url: "frmf6.php",
-                        data: dataString,
-                        success: function(result) {
-                            $('#Output').html(result);
-                        }
-                    });
-                    return false;    
-                });
-            });
-        </script>
     </body>
 </html>

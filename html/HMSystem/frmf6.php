@@ -55,7 +55,7 @@ if ($result->num_rows > 0) {
     {
         echo "<tr>";
         echo "<td>".$data["GuestID"]."</td>";
-        echo "<td>".$data["T"]."</td>";
+        echo "<td>".$data["SUM(TotalCost)"]."</td>";
         echo "</tr>";
     }
     echo "</table>";
