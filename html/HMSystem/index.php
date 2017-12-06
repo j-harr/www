@@ -121,7 +121,7 @@
                 <h3>Search Room</h3>
             </div>
             <div class="form-row">
-                <label>Room Number</label><input type="number" name="f4RoomNum" id="f4RoomN">
+                <label>Room Number</label><input type="number" name="f4RoomNum" id="f4RoomN" required>
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit4">
@@ -142,7 +142,7 @@
                 <h3>Tender Payment</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="text" name="f6guestID" id="f6guestID">
+                <label>Guest ID</label><input type="text" name="f6guestID" id="f6guestID" required>
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit6">

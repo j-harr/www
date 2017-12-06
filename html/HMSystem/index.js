@@ -147,8 +147,6 @@ $(function() {
     $("#Submit2").click(function() {
         var gID = $("input#f2guestID").val();
         if(gID == ""){
-            $("label#f1guestID_error").show();
-            $("input#f1guestID").focus();
             return false;
         }
         var dataString = 'f2guestID='+ gID;
