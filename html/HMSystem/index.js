@@ -102,6 +102,18 @@ $(function() {
             alert("Phone Number is a required field.");
             return false;
         }
+        if(gZIP == ""){
+            alert("ZIP Code is a required field.");
+            return false;
+        }
+        if(gAGE == ""){
+            alert("Age is a required field.");
+            return false;
+        }
+        if(gNIP == ""){
+            alert("Number in party is a required field.");
+            return false;
+        }
         if(gRN == ""){
             alert("Room Number is a required field.");
             return false;

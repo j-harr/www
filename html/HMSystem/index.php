@@ -37,7 +37,7 @@
                 <label>Last Name</label><input type="text" name="f1guestLN" id="f1guestLN"/>
             </div>
             <div class="form-row">
-                <label>Primary Phone *</label><input type="tel" name="f1guestPN" id="f1guestPN"/>
+                <label>Primary Phone *</label><input type="number" name="f1guestPN" id="f1guestPN"/>
             </div>
             <div class="form-row">
                 <label>Phone 2</label><input type="tel" name="f1guestPN2" id="f1guestPN2"/>
@@ -58,13 +58,13 @@
                 <label>Country</label><input type="text" name="f1guestCTRY" id="f1guestCTRY"/>
             </div>
             <div class="form-row">
-                <label>ZIP Code</label><input type="number" name="f1guestZIP" id="f1guestZIP"/>
+                <label>ZIP Code *</label><input type="number" name="f1guestZIP" id="f1guestZIP"/>
             </div>
             <div class="form-row">
-                <label>Age</label><input type="number" name="f1guestAGE" id="f1guestAGE"/>
+                <label>Age *</label><input type="number" name="f1guestAGE" id="f1guestAGE"/>
             </div>
             <div class="form-row">
-                <label># in Party</label><input type="number" name="f1guestNIP" id="f1guestNIP"/>
+                <label># in Party *</label><input type="number" name="f1guestNIP" id="f1guestNIP"/>
             </div>
             <div class="form-row">
                 <label>Room Number *</label><input type="number" name="f1guestRMN" id="f1guestRMN"/>
