@@ -42,7 +42,7 @@ if ($result->num_rows > 0) {
     echo "0 results<br><br>";
 }
 if ($conn->multi_query($sql) === TRUE) {
-    echo "Query executed.";
+    echo "<br>Query executed.";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
