@@ -93,8 +93,7 @@ $(function() {
         var gECADR = $("input#f1guestECADR").val();
 
         if(gID == ""){
-            $("label#f1guestID_error").show();
-            $("input#f1guestID").focus();
+            alert("Guest ID is a required field.");
             return false;
         }
         if(gFN == ""){

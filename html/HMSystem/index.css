@@ -103,6 +103,7 @@ label {
     background-color: lightgray;
     border: 5px solid black;
     color: black;
+    display: none;
     font-family: Courier New, Courier, monospace;
     height: auto;
     padding: 10px;
