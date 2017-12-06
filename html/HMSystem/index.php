@@ -37,7 +37,7 @@
                 <label>Last Name</label><input type="text" name="f1guestLN" id="f1guestLN"/>
             </div>
             <div class="form-row">
-                <label>Primary Phone</label><input type="tel" name="f1guestPN" id="f1guestPN"/>
+                <label>Primary Phone *</label><input type="tel" name="f1guestPN" id="f1guestPN"/>
             </div>
             <div class="form-row">
                 <label>Phone 2</label><input type="tel" name="f1guestPN2" id="f1guestPN2"/>
@@ -67,13 +67,13 @@
                 <label># in Party</label><input type="number" name="f1guestNIP" id="f1guestNIP"/>
             </div>
             <div class="form-row">
-                <label>Room Number</label><input type="number" name="f1guestRMN" id="f1guestRMN"/>
+                <label>Room Number *</label><input type="number" name="f1guestRMN" id="f1guestRMN"/>
             </div>
             <div class="form-row">
-                <label>Days Staying</label><input type="number" name="f1guestDS" id="f1guestDS"/>
+                <label>Days Staying *</label><input type="number" name="f1guestDS" id="f1guestDS"/>
             </div>
             <div class="form-row">
-                <label>Rate/night</label><input type="number" name="f1guestRATE" id="f1guestRATE"/>
+                <label>Rate/night *</label><input type="number" name="f1guestRATE" id="f1guestRATE"/>
             </div>
             <div class="form-row">
                 <h4>Emergency Contact<h4>
@@ -97,7 +97,7 @@
                 <h3>Remove Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="number" name="f2guestID" id="f2guestID">
+                <label>Guest ID *</label><input type="number" name="f2guestID" id="f2guestID">
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit2">
@@ -109,7 +109,7 @@
                 <h3>Search Guest</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="number" name="f3guestID" id="f3guestID">
+                <label>Guest ID *</label><input type="number" name="f3guestID" id="f3guestID">
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit3">
@@ -121,7 +121,7 @@
                 <h3>Search Room</h3>
             </div>
             <div class="form-row">
-                <label>Room Number</label><input type="number" name="f4RoomNum" id="f4RoomN">
+                <label>Room Number *</label><input type="number" name="f4RoomNum" id="f4RoomN">
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit4">
@@ -142,7 +142,7 @@
                 <h3>Tender Payment</h3>
             </div>
             <div class="form-row">
-                <label>Guest ID</label><input type="text" name="f6guestID" id="f6guestID">
+                <label>Guest ID *</label><input type="text" name="f6guestID" id="f6guestID">
             </div>
             <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit6">

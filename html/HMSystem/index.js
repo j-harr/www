@@ -21,7 +21,7 @@ btnf1.onclick = function btnf1Click() {
     frmf3.style.display = "none";
     frmf4.style.display = "none";
     frmf5.style.display = "none";
-    frmf6.style.display = "none";                
+    frmf6.style.display = "none";               
     frmf1.style.display = "flex";
 }
 btnf2.onclick = function btnf2Click() {
@@ -96,34 +96,20 @@ $(function() {
             alert("Guest ID is a required field.");
             return false;
         }
-        if(gFN == ""){
-            $("label#f1guestFN_error").show();
-            $("input#f1guestFN").focus();
-            return false;
-        }
-        if(gLN == ""){
-            $("label#f1guestLN_error").show();
-            $("input#f1guestLN").focus();
-            return false;
-        }
         if(gPN == ""){
-            $("label#f1guestPN_error").show();
-            $("input#f1guestPN").focus();
+            alert("Phone Number is a required field.");
             return false;
         }
         if(gRN == ""){
-            $("label#f1guestRMN_error").show();
-            $("input#f1guestRMN").focus();
+            alert("Room Number is a required field.");
             return false;
         }
         if(gDS == ""){
-            $("label#f1guestCHIN_error").show();
-            $("input#f1guestCHIN").focus();
+            alert("Days staying is a required field.");
             return false;
         }
-        if(gFN == ""){
-            $("label#f1guestFN_error").show();
-            $("input#f1guestFN").focus();
+        if(gRATE == ""){
+            alert("Rate/night is a required field.");
             return false;
         }
         var dataString = 'f1guestID='+ gID + '&f1guestFN='+ gFN + '&f1guestMN='+ gMN +
@@ -139,6 +125,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
@@ -146,6 +133,7 @@ $(function() {
     $("#Submit2").click(function() {
         var gID = $("input#f2guestID").val();
         if(gID == ""){
+            alert("Guest ID is a required field.");
             return false;
         }
         var dataString = 'f2guestID='+ gID;
@@ -155,6 +143,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
@@ -162,8 +151,7 @@ $(function() {
     $("#Submit3").click(function() {
         var gID = $("input#f3guestID").val();
         if(gID == ""){
-            $("label#f1guestID_error").show();
-            $("input#f1guestID").focus();
+            alert("Guest ID is a required field.");
             return false;
         }
         var dataString = 'f3guestID='+ gID;
@@ -173,6 +161,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
@@ -180,8 +169,7 @@ $(function() {
     $("#Submit4").click(function() {
         var rMN = $("input#f4RoomN").val();
         if(rMN == ""){
-            $("label#f1guestID_error").show();
-            $("input#f1guestID").focus();
+            alert("Room number is a required field.");
             return false;
         }
         var dataString = 'f4RoomNum='+ rMN;
@@ -191,6 +179,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
@@ -211,8 +200,7 @@ $(function() {
     $("#Submit6").click(function() {
         var gID = $("input#f6guestID").val();
         if(gID == ""){
-            $("label#f1guestID_error").show();
-            $("input#f1guestID").focus();
+            alert("Guest ID is a required field.");
             return false;
         }
         var dataString = 'f6guestID='+ gID;
@@ -222,6 +210,7 @@ $(function() {
             data: dataString,
             success: function(result) {
                 $('#Output').html(result);
+                $('#Output').show();
             }
         });
         return false;    
