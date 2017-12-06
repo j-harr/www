@@ -4,8 +4,7 @@
         <title>Hotel Management System</title>
         <link rel = "stylesheet" type = "text/css" href = "index.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="index.js"></script>
-
+        <script src="index.js"></script>
     </head>
     <body>
         <h1>Hotel Management System</h1>
@@ -20,7 +19,7 @@
         </div>
         <hr>
         <div class="body-block">
-        <div class="body-chunk" style="width: 25%;">
+        <div class="body-chunk" style="width: 30%;">
         <form id="frmf1" name="frmf1" action="">
             <div class="form-row">
                 <h3>Add Guest</h3>
@@ -150,7 +149,7 @@
             </div>
         </form>
         </div>
-        <div class="body-chunk" style="width: 75%;">
+        <div class="body-chunk" style="width: 70%;">
             <div id="Output"></div>
         </div>
         </div>
