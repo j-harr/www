@@ -112,9 +112,9 @@ label {
 
 table {
     border-collapse: collapse;
-    border: 2px solid black;
+    border: 1px solid black;
     display: block;
-    max-width: 800px;
+    max-width: 1000px;
     width: auto;
 }
 
