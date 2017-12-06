@@ -59,7 +59,7 @@ if ($result->num_rows > 0) {
     {
         echo "<tr>";
         echo "<td>".$data["GuestID"]."</td>";
-        echo "<td>".$data["SUM(TotalCost)"]."</td>";
+        echo "<td>$".$data["SUM(TotalCost)"].".00</td>";
         echo "</tr>";
     }
     echo "</table>";
