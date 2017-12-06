@@ -4,7 +4,7 @@
         <title>Hotel Management System</title>
         <link rel = "stylesheet" type = "text/css" href = "index.css"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="index.js"
+        <script type="text/javascript" src="index.js"></script>
 
     </head>
     <body>
