@@ -109,6 +109,7 @@ label {
     display: none;
     font-family: Arial, Helvetica, sans-serif;
     height: auto;
+    max-width: 800px;
     padding: 10px;
     width: auto;
 }
