@@ -100,12 +100,16 @@ if ($conn->multi_query($sql) === TRUE) {
 $conn->close();
 
 $conny = new mysqli($servername, $username, $password, $dbname);;
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $f3guestID = clean($_POST['f3guestID']);
+    $f3guestUDS = clean($_POST['f3guestUDS']);
+}
 
 //Check connection
 if($conny->connect_error){
     die("NOT CONNECTED" . "Connection failed: " . $conny->connect_error);
 }
-echo "Days Staying value is: ".$f3guestUDS;
+echo "Days Staying value is: ".$f3guestUDS.".";
 if($f3guestUDS != ""){
 if ($conny->multi_query($yolo) === TRUE) {
     echo "<br>Day Staying value changed to ".$f3guestUDS." for Guest ".$f3guestID.".";
