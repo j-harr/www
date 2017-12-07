@@ -169,6 +169,10 @@ $(function() {
             alert("Guest ID is a required field.");
             return false;
         }
+        if(gUDS == ""){
+            alert("Day Staying is a required field.");
+            return false;
+        }
         var dataString = 'f3guestID='+ gID + 'f3guestUDS=' + gUDS;
         $.ajax({
             type: "POST",
