@@ -169,7 +169,7 @@ $(function() {
             alert("Guest ID is a required field.");
             return false;
         }
-        var dataString = 'f3guestID='+ gID + 'f3guestUDS' + gUDS;
+        var dataString = 'f3guestID='+ gID + 'f3guestUDS=' + gUDS;
         $.ajax({
             type: "POST",
             url: "frmf3.php",
