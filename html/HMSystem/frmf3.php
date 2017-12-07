@@ -100,10 +100,6 @@ if ($conn->multi_query($sql) === TRUE) {
 $conn->close();
 
 $conny = new mysqli($servername, $username, $password, $dbname);;
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $f3guestID = clean($_POST['f3guestID']);
-    $f3guestUDS = clean($_POST['f3guestUDS']);
-}
 
 //Check connection
 if($conny->connect_error){
