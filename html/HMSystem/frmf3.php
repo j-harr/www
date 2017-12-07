@@ -105,6 +105,7 @@ $conny = new mysqli($servername, $username, $password, $dbname);;
 if($conny->connect_error){
     die("NOT CONNECTED" . "Connection failed: " . $conny->connect_error);
 }
+echo "Days Staying value is: ".$f3guestUDS;
 if($f3guestUDS != ""){
 if ($conny->multi_query($yolo) === TRUE) {
     echo "<br>Day Staying value changed to ".$f3guestUDS." for Guest ".$f3guestID.".";
