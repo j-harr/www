@@ -39,8 +39,7 @@ $result = $conn->query($sql);
 
 if($result->num_rows > 0){
     if($f3guestUDS != ""){
-        $sql .= "UPDATE Booking SET DayStaying='".$f3guestUDS."' WHERE GuestID='".$f3guestID."';";
-        $result = $conn->query($sql);
+        $yolo .= "UPDATE Booking SET DayStaying='".$f3guestUDS."' WHERE GuestID='".$f3guestID."';";
     }
 }
 
@@ -97,6 +96,14 @@ if ($conn->multi_query($sql) === TRUE) {
     echo "<br>Query executed.";
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+if($f3guestUDS != ""){
+if ($conn->multi_query($yolo) === TRUE) {
+    echo "<br>Day Staying value changed to ".$f3guestUDS." for Guest ".$f3guestID.".";
+} else {
+    echo "Error: " . $yolo . "<br>" . $conn->error;
+}
 }
 
 $conn->close();
