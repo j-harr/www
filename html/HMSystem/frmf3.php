@@ -39,7 +39,7 @@ $result = $conn->query($sql);
 
 if($result->num_rows > 0){
     if($f3guestUDS != ""){
-        $sql .= "UPDATE Booking SET DayStaying='".$f3guestUDS"' WHERE GuestID='".$f3guestID."';";
+        $sql .= "UPDATE Booking SET DayStaying='".$f3guestUDS."' WHERE GuestID='".$f3guestID."';";
     }
 }
 
