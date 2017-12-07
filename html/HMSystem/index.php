@@ -112,6 +112,9 @@
                 <label>Guest ID *</label><input type="number" name="f3guestID" id="f3guestID">
             </div>
             <div class="form-row">
+                <label>Update Days Stayed</label><input type="number" name="f3guestID" id="f3guestUDS">
+            </div>
+            <div class="form-row">
                 <input class="button" type="submit" value="Submit" id="Submit3">
             </div>
         </form>

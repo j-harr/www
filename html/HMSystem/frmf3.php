@@ -2,6 +2,7 @@
 <?php
 //Declaration of variables
 $f3guestID = "";
+$f3guestUDS = "";
 
 $servername = "localhost";
 $username = "client";
@@ -18,6 +19,7 @@ if($conn->connect_error){
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $f3guestID = clean($_POST['f3guestID']);
+    $f3guestUDS = clean($_POST['f3guestUDS']);
 }
 
 function clean($data){
@@ -35,6 +37,11 @@ AND Bo.RoomNumber=R.RoomNumber;";
 
 $result = $conn->query($sql);
 
+if($result->num_rows > 0){
+    if($f3guestUDS != ""){
+        $sql .= "UPDATE Booking SET DayStaying='".$f3guestUDS"' WHERE GuestID='".$f3guestID."';";
+    }
+}
 
 if ($result->num_rows > 0) {
     echo '<div style="overflow-x:auto;">';

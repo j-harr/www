@@ -164,11 +164,12 @@ $(function() {
     });
     $("#Submit3").click(function() {
         var gID = $("input#f3guestID").val();
+        var gUDS = $("input#f3guestUDS").val();
         if(gID == ""){
             alert("Guest ID is a required field.");
             return false;
         }
-        var dataString = 'f3guestID='+ gID;
+        var dataString = 'f3guestID='+ gID + 'f3guestUDS' + gUDS;
         $.ajax({
             type: "POST",
             url: "frmf3.php",
