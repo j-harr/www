@@ -97,14 +97,21 @@ if ($conn->multi_query($sql) === TRUE) {
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
+$conn->close();
 
+$conny = new mysqli($servername, $username, $password, $dbname);;
+
+//Check connection
+if($conny->connect_error){
+    die("NOT CONNECTED" . "Connection failed: " . $conny->connect_error);
+}
 if($f3guestUDS != ""){
-if ($conn->multi_query($yolo) === TRUE) {
+if ($conny->multi_query($yolo) === TRUE) {
     echo "<br>Day Staying value changed to ".$f3guestUDS." for Guest ".$f3guestID.".";
 } else {
-    echo "Error: " . $yolo . "<br>" . $conn->error;
+    echo "Error: " . $yolo . "<br>" . $conny->error;
 }
 }
+$conny->close();
 
-$conn->close();
 ?>
