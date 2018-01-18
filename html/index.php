@@ -35,7 +35,7 @@
                     </div>
                     <div class="page-description">
                         <p>Learn more about the jacobOL site and its humble beginnings.
-                             Likely under construction until November 1, 2017.</p>
+                             Likely always under construction until always.</p>
                     </div>
                 </div>
             </a>
