@@ -16,18 +16,18 @@
             <hr>
         </header>
         <div class="ext_pgs">
-            <a href="Library/library.html">
+            <a href="HMSystem/index.php">
                 <div class="ext_page" style="background-color:lightgreen;
                 color: black">
                     <div class="page-title">
-                        <h4>Section Title</h4>
+                        <h4>Health Management System</h4>
                     </div>
                     <div class="page-description">
-                        <p>Insert new section here.</p>
+                        <p>Class project for CS2300 - Introduction to Files Structures and Database Systems.</p>
                     </div>
                 </div>
             </a>
-            <a href="About/about.php">
+            <a href="About/index.php">
                 <div class="ext_page" style="background-color:lightcoral;
                 color: black">
                     <div class="page-title">
