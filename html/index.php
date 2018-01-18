@@ -20,15 +20,14 @@
                 <div class="ext_page" style="background-color:lightgreen;
                 color: black">
                     <div class="page-title">
-                        <h4>CS2300 Group 11 Library</h4>
+                        <h4>Section Title</h4>
                     </div>
                     <div class="page-description">
-                        <p>The home page for Group 11's simulated library database and website.
-                             Likely under construction until Thanksgiving.</p>
+                        <p>Insert new section here.</p>
                     </div>
                 </div>
             </a>
-            <a href="About/about.html">
+            <a href="About/about.php">
                 <div class="ext_page" style="background-color:lightcoral;
                 color: black">
                     <div class="page-title">
